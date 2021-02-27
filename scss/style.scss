@@ -26,109 +26,179 @@
       format("woff2");
 }
 
-@font-face {
-  font-family: "Lato-Right";
+// Шрифты font-family: 'Lato', sans-serif; font-family: 'Lato-Black'; font-family: 'Lato-light';
 
-  src: url("https://nomail.com.ua/files/eot/9ff1710baadf935e7d7bc7c459fcabfe.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://nomail.com.ua/files/woff/9ff1710baadf935e7d7bc7c459fcabfe.woff")
-      format("woff"),
-    url("https://nomail.com.ua/files/woff2/9ff1710baadf935e7d7bc7c459fcabfe.woff2")
-      format("woff2");
-}
-
-// Шрифты font-family: 'Lato', sans-serif; font-family: 'Lato-Black'; font-family: 'Lato-light'; font-family: 'Lato-Right';
-
-@mixin fonts($ff, $fw, $fs, $lh, $c, $ta) {
+@mixin fonts($ff, $fw, $fs, $lh, $c) {
   font-family: $ff;
   font-weight: $fw;
   font-size: $fs;
   line-height: $lh;
   color: $c;
-  text-align: $ta;
 }
 @mixin flexnav() {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
-  // Настройка Контейнера
-  .container {
-    max-width: 1140px;
-    margin: 0 auto;
+.header__nav-top-box {
+  margin: 25px 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header__box-left-container {
+  display: flex;
+  align-items: center;
+  .header__box-left-label {
+    display: flex;
+    align-items: center;
   }
 
-  //Навигация топ.
-
-  .header__nav-top-box {
-    @include flexnav();
-  }
-  .eader__box-left {
-    min-width: 165px;
-    @include flexnav();
-  }
-
-  .box-left-label {
-    max-width: 59px;
-    max-height: 51px;
+  .box-left {
+    &-label {
+      max-width: 59px;
+    }
   }
 
   .box-left-name {
-    @include fonts("Lato", 300, 27px, 32px, #222222, center);
+    display: inline-block;
+    padding-left: 13px;
+    @include fonts("Lato", 300, 27px, 32px, #222222);
     span {
-      @include fonts("Lato-Black", 400, 27px, normal, #f16d7f, center);
+      @include fonts("Lato-Black", 400, 27px, normal, #f16d7f);
       letter-spacing: 0.68px;
     }
   }
+}
 
-  // навигация. Поиск с иконкой поиска
-  .box-center-form {
-    position: relative;
-    width: 300px;
-    margin: 0 auto;
-  }
-  input {
-    width: 100%;
-    height: 42px;
-    padding-left: 10px;
-    border: 1.2px solid #9e9c9c;
-    border-radius: 3px;
-    opacity: 0.5;
-    color: #9e9c9c;
+// поисковик
+
+.box-center-browse {
+  display: flex;
+  border-radius: 3px;
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+}
+.box-center-browse-container {
+  display: inline-block;
+  margin-left: 37px;
+}
+.browse-select {
+  padding: 0 8px 0 14px;
+  @include fonts("Lato", 300, 14px, 36px, #222222);
+  letter-spacing: 0.35px;
+  background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+  border-radius: 2px 0 0 2px;
+}
+
+.box-center-form {
+  display: flex;
+  border-left: 1px solid #e6e6e6;
+  width: 317px;
+  justify-content: space-between;
+  .input-center-form {
+    @include fonts("Lato", 300, 14px, 36px, #a4a4a4);
+    padding: 0 16px;
+    letter-spacing: 0.35px;
   }
   button {
-    position: absolute;
-    top: 18px;
-    right: 0px;
-    width: 42px;
-    height: 42px;
-    border: 1.2px solid #9e9c9c;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    opacity: 0.5;
-  }
-
-  // Пример закончен
-
-  // Навигация нижняя часть
-
-  .brows-list {
-    display: block;
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    line-height: 32px;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 0.35px;
-
-    .brows-list-link-category {
-      text-decoration: none;
-      color: #232323;
-    }
-    .brows-list-link {
-      color: #4f4f4f;
-      line-height: 28px;
-      text-transform: none;
+    background: white;
+    padding: 10px 11px;
+    align-self: center;
+    border-left: 1px solid #e6e6e6;
+    border-radius: 0 2px 2px 0;
+    .search-icon {
+      color: #a4a4a4;
     }
   }
+}
+
+// Правый бокс с корзиной и личным кабинетом
+
+.header__box-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  &-user-name {
+    margin-left: 26px;
+    @include fonts("Lato", 400, 15px, 38px, #ffffff);
+    letter-spacing: 0.38px;
+    background-color: #f16d7f;
+    padding: 0 12px 0 19px;
+    a {
+      color: #ffffff;
+    }
+  }
+}
+.fa-caret-down {
+  padding-left: 8px;
+}
+
+// Горизонтальная линия
+hr {
+  border-style: inset;
+  border-width: 0.2px;
+  background-color: #ffffff;
+  opacity: 0.2;
+}
+// Навигация нижняя часть
+
+.header__nav-bottom {
+  .header__nav-bottom-list {
+    display: flex;
+    justify-content: center;
+    padding: 11px 0 14px;
+    .nav-bottom-items {
+      @include fonts("Lato", 700, 14px, 26px, #222222);
+      text-transform: uppercase;
+      padding-left: 45px;
+
+      a {
+        color: #222222;
+      }
+    }
+    .nav-bottom-items:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+// Шапка заставка
+.header__section {
+  background: #e8e8e8;
+  .header__name-title {
+    background: url(../background/nav__bottom-bac.png) left bottom no-repeat;
+    max-height: 612px;
+    position: relative;
+    padding: 210px 0 297px 25px;
+
+    .header__name-subtitle {
+      @include fonts("Lato-Black", 400, 60px, normal, #222222);
+      p {
+        @include fonts("Lato-Black", 400, 40px, normal, #222222);
+        letter-spacing: 1px;
+        span {
+          color: #f16d7f;
+        }
+      }
+    }
+  }
+}
+.header__name-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 223px;
+  display: block;
+  width: 12px;
+  height: 92px;
+  background: #f16d7f;
 }

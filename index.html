@@ -1,114 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/b7f8d46f70.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b7f8d46f70.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
     <title>BRAND</title>
-</head>
-
-<body>
-    <!-- Голова -->
+  </head>
+  <body>
+    <!-- Шапка -->
     <header class="header">
-        <!-- Навигация -->
-        <nav class="header__nav">
-            <!-- Навигация вверхняя часть -->
-            <div class="header__nav-top">
-                <div class="container">
-                    <div class="header__nav-top-box">
-                        <!-- Левый бокс с лейблом -->
-                        <div class="header__box-left">
-                            <a href="index.html"><img class="box-left-label" src="img/naw__icon-label.png" alt="icon-label"></a>
-                            <div>
-                                <p class="box-left-name">BRAN<span>D</span></p>
-                            </div>
-                        </div>
-                        <!-- Средний бокс с поиском -->
-                        <div class="header__box-center">
-                            <div class="box-center-browse">
-                                <!-- <ul>
-                                    <li class="brows-list"><a class="brows-list-link-category" href="">Women</a>
 
-                                        <ul>
-                                            <li><a class="brows-list-link" href="">Dresses
-                                                </a></li>
-                                            <li><a class="brows-list-link" href="">Tops
-                                                </a></li>
-                                            <li><a class="brows-list-link" href="">Sweaters/Knits
-                                                </a></li>
-                                            <li><a class="brows-list-link" href="">Jackets/Coats
-                                                </a></li>
-                                            <li><a class="brows-list-link" href="">Blazers
-                                                </a></li>
-                                            <li><a class="brows-list-link" href="">Denim
+      <!-- Навигация -->
+      <nav class="header__nav">
+        
+        <!-- Навигация верхняя часть -->
+        <div class="header__nav-top">
+          <!-- container -->
+          <div class="container">
+            <!-- Контейнер для навигации верхней части -->
+            <div class="header__nav-top-box">
+              <!-- Левый бокс с лейблом и поиском-->
+              <div class="header__box-left-container">
+                <div class="header__box-left-label">
+                  <img class="box-left-label" src="img/naw__icon-label.png" alt="icon-label">
+                  <p class="box-left-name">BRAN<span>D</span>
+                  </p>
+                </div>
+                <!-- Поисковик  -->
+                <div class="box-center-browse-container">
+                  <div class="box-center-browse">
+                    <p class="browse-select">Browse
+                      <i class="fas fa-caret-down"></i></p>
+                    <form action="#" class="box-center-form">
+                      <input type="search" name="search" class="input-center-form" placeholder="Search for Item...">
+                      <button type="submit"> <i class="fas fa-search search-icon"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!-- Правый бокс с корзиной и личным кабинетом-->
+              <div class="header__box-right">
+                <div class="header__box-right-cart">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="29" viewBox="0 0 32 29"> <g> <path fill="#222" d="M0 1.182C0 .532.533 0 1.184 0h4.28c.533 0 1.007.354 1.145.867l4.833 17.455H24.62l4.379-10.048H14.4a1.186 1.186 0 0 1-1.184-1.182c0-.65.533-1.182 1.184-1.182h16.413c.394 0 .77.197.986.532.217.335.257.749.099 1.123l-5.405 12.412c-.198.433-.612.709-1.085.709H10.554a1.184 1.184 0 0 1-1.144-.867L4.577 2.364H1.184A1.186 1.186 0 0 1 0 1.182zM6.747 26.32a2.684 2.684 0 0 1 5.365 0 2.684 2.684 0 0 1-5.365 0zm16.788.178c-.1-1.458 1.006-2.758 2.485-2.857 1.48-.098 2.762 1.025 2.86 2.483.04.728-.177 1.418-.65 1.95a2.678 2.678 0 0 1-1.835.926h-.197c-1.401 0-2.565-1.103-2.663-2.502z"></g>
+                  </svg>
+                </div>
+                <div class="header__box-right-user">
+                   <p class="header__box-right-user-name"> <a href="#">My Account</a> 
+                   <i class="fas fa-caret-down"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                                                </a></li>
-                                            <li><a class="brows-list-link" href="">Leggings/Pants
-                                                </a></li>
-                                            <li><a class="brows-list-link" href="">Skirts/Shorts
-                                                </a></li>
-                                            <li><a class="brows-list-link" href="">Accessories</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="brows-list"> </li>
-                                </ul> -->
-                            </div>
-                            <form action="#" class="box-center-form">
-                                <input type="search" name="search" placeholder="Search for Item...">
-                                <button type="submit"></button>
-                            </form>
+        <!-- Линия -->
+        <hr>
 
-                        </div>
-                        <!-- Правый бокс с корзиной и личным кабинетом -->
-                        <div class="header__box-right">
-                            <div class="box-right-basket">
-                            </div>
-                            <div class="box-right-user">
-                                <form action="#" class="box-right-form">
-                                    <select name="" id="">
-                                        <option value="#">My Account</option>
-                                        <option value="#">Name2</option>
-                                        <option value="#">Name3</option>
-                                    </select>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <!-- Навигация нижняя часть -->
-            <!-- <div class="nav-bottom">
-                <div class="container">
-                    <ul class="nav-bottom-list">
-                        <li class="nav-bottom-items"> <a href="#">HOME</a></li>
-                        <li class="nav-bottom-items"><a href="#">MAN</a></li>
-                        <li class="nav-bottom-items"><a href="#">WOMAN</a></li>
-                        <li class="nav-bottom-items"><a href="#">KIDS</a></li>
-                        <li class="nav-bottom-items"><a href="#">ACCOSERIESE</a></li>
-                        <li class="nav-bottom-items"><a href="#">FEATURED</a></li>
-                        <li class="nav-bottom-items"><a href="#">HOT DEALS</a></li>
-                    </ul>
-                </div>
-            </div> -->
-        </nav>
-        <!-- Название магазина -->
-        <!-- <div class="header__name">
-            <div class="header__name-bag">
-                <img src="" alt="">
-            </div>
-            <div class="header__name-title">
-                <div class="container">
-                    <h1 class="header__name__subtitle">THE BRAND
-                        <p>OF LUXERIOUS <span>FASHION</span></p>
-                    </h1>
-                </div>
-            </div>
-        </div> -->
+        <!-- Навигация нижняя часть -->
+        <div class="header__nav-bottom">
+          <div class="container">
+            <ul class="header__nav-bottom-list">
+                <li class="nav-bottom-items"> <a href="#">HOME</a></li>
+                <li class="nav-bottom-items"><a href="#">MAN</a></li>
+                <li class="nav-bottom-items"><a href="#">WOMAN</a></li>
+                <li class="nav-bottom-items"><a href="#">KIDS</a></li>
+                <li class="nav-bottom-items"><a href="#">ACCOSERIESE</a></li>
+                <li class="nav-bottom-items"><a href="#">FEATURED</a></li>
+                <li class="nav-bottom-items"><a href="#">HOT DEALS</a></li>
+            </ul>
+        </div>
+          
+        </div>
+      </nav>
+
+      <!-- Шапка Заставка -->
+      <section class="header__section">
+        <div class="container">
+          <div class="header__name-title">
+            <h1 class="header__name-subtitle">THE BRAND
+              <p>OF LUXERIOUS <span>FASHION</span></p>
+            </h1>
+          </div>
+        </div>
+      </section>
     </header>
-</body>
-
+  </body>
 </html>

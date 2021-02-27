@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: 'Lato-Light';
+  src: url("https://nomail.com.ua/files/eot/84ed8ff4f8f7fa78ec9476e0b1449fe3.eot?#iefix") format("embedded-opentype"), url("https://nomail.com.ua/files/woff/84ed8ff4f8f7fa78ec9476e0b1449fe3.woff") format("woff"), url("https://nomail.com.ua/files/woff2/84ed8ff4f8f7fa78ec9476e0b1449fe3.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Lato-Right';
+  src: url("https://nomail.com.ua/files/eot/9ff1710baadf935e7d7bc7c459fcabfe.eot?#iefix") format("embedded-opentype"), url("https://nomail.com.ua/files/woff/9ff1710baadf935e7d7bc7c459fcabfe.woff") format("woff"), url("https://nomail.com.ua/files/woff2/9ff1710baadf935e7d7bc7c459fcabfe.woff2") format("woff2");
+}
+
+.brows-list {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+}
+
+.brows-list .brows-list-link-category {
+  text-decoration: none;
+  color: #232323;
+}
+
+.brows-list .brows-list-link {
+  color: #4f4f4f;
+  line-height: 28px;
+  text-transform: none;
+}
+
+.box-center-form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 1.2px solid #9E9C9C;
+  border-radius: 3px;
+  opacity: 0.5;
+  color: #9E9C9C;
+}
+
+button {
+  position: absolute;
+  top: 18px;
+  right: 0px;
+  width: 42px;
+  height: 42px;
+  border: 1.2px solid #9E9C9C;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  opacity: 0.5;
+}

@@ -57,25 +57,25 @@
 .header__box-left-container {
   display: flex;
   align-items: center;
-  .header__box-left-label {
-    display: flex;
-    align-items: center;
-  }
+}
+.header__box-left-label {
+  display: flex;
+  align-items: center;
+}
 
-  .box-left {
-    &-label {
-      max-width: 59px;
-    }
+.box-left {
+  &-label {
+    max-width: 59px;
   }
+}
 
-  .box-left-name {
-    display: inline-block;
-    padding-left: 13px;
-    @include fonts("Lato", 300, 27px, 32px, #222222);
-    span {
-      @include fonts("Lato-Black", 400, 27px, normal, #f16d7f);
-      letter-spacing: 0.68px;
-    }
+.box-left-name {
+  display: inline-block;
+  padding-left: 13px;
+  @include fonts("Lato", 300, 27px, 32px, #222222);
+  span {
+    @include fonts("Lato-Black", 400, 27px, normal, #f16d7f);
+    letter-spacing: 0.68px;
   }
 }
 
@@ -426,22 +426,16 @@ hr {
   }
 }
 
-
 // Подвал
 
-
-
-
 .footer {
-  
   // Верхняя часть подвала
   &__top {
     background: linear-gradient(rgba(244, 244, 244, 0.7)),
-    url(../background/footer__top-bg.png) no-repeat;
+      url(../background/footer__top-bg.png) no-repeat;
     background-size: cover;
     margin-bottom: 109px;
-    
-    
+
     // Левая часть подвала
     &-box {
       display: flex;
@@ -455,13 +449,12 @@ hr {
       &-title {
         max-width: 386px;
         position: relative;
-        padding-bottom: 29px;
-        
+        padding-bottom: 35px;
+
         &-photo {
           position: absolute;
           top: 0px;
           left: -110px;
-          
         }
         &-paragraph {
           @include fonts("Lato", 300, 16px, 26px, #222224);
@@ -469,25 +462,26 @@ hr {
           font-style: italic;
           padding-top: 6px;
           padding-bottom: 10px;
-         
         }
         &-text {
           @include fonts("Lato", 700, 16px, normal, #f16d7f);
-          span {
-            @include fonts("Lato-Light", 300, 12px, 14px, #222224);
-            letter-spacing: 0.3px;
-          }
+          padding-bottom: 3px;
+        }
+        &-paragraph_text {
+          @include fonts("Lato-Light", 300, 12px, 5px, #222224);
+          letter-spacing: 0.3px;
         }
       }
-  
+
       &-jump {
+        padding-left: 3px;
         &-jump {
           display: inline-block;
           cursor: pointer;
           width: 38px;
           height: 4px;
           background-color: #d6d6d6;
-          margin-left: 13px;
+          margin-left: 12px;
         }
         &-jump:first-child {
           margin-left: 0;
@@ -500,22 +494,18 @@ hr {
     // Правая часть подвала
     &-sub {
       align-self: start;
-    //  max-width: 480px;
-    //  width: 100%;
-    padding: 19px 96px 0 0;
-     text-align: center;
-    .footer__top-sub-box {
-     
-
-    }
+      padding: 19px 96px 0 0;
+      text-align: center;
+      .footer__top-sub-box {
+      }
       &-title {
         padding-bottom: 29px;
-        
+
         &-subtitle {
           @include fonts("Lato", 400, 24px, 50px, #222224);
-            letter-spacing: 0.6px;
-            text-transform: uppercase;
-            margin-bottom: -9px;
+          letter-spacing: 0.6px;
+          text-transform: uppercase;
+          margin-bottom: -9px;
         }
         &-paragraph {
           @include fonts("Lato", 400, 14px, 24px, #222224);
@@ -523,15 +513,14 @@ hr {
           text-transform: uppercase;
         }
       }
-      
+
       &-form {
-       
         &-input {
           padding: 9px 104px 9px 28px;
           background: #e1e1e1;
           border-top-left-radius: 25px;
           border-bottom-left-radius: 25px;
-          @include fonts('Lato', 400, 14px, 24px, #222224);
+          @include fonts("Lato", 400, 14px, 24px, #222224);
           letter-spacing: 0.35px;
           opacity: 0.67;
         }
@@ -542,10 +531,9 @@ hr {
           border-bottom-right-radius: 25px;
           margin-left: -3.8px;
           &-text {
-          @include fonts('Lato', 400, 14px, 24px, #ffffff);  
-          letter-spacing: 0.35px;
+            @include fonts("Lato", 400, 14px, 24px, #ffffff);
+            letter-spacing: 0.35px;
           }
-        
         }
         &-button:hover {
           box-shadow: 4px 0px 20px rgba(156, 17, 8, 0.829);
@@ -556,45 +544,74 @@ hr {
 
   // Центральная часть подвала
 
-  .&__center-wrapper {
+  &__center-wrapper {
     display: grid;
-    
+    grid-template-columns: 2.2fr 0.8fr 0.8fr 0.8fr;
+    grid-template-rows: 1fr;
+    column-gap: 80px;
+    padding-bottom: 89px;
+
     &__about-us {
       // Бренд
-      &-label {
-        img {
-        }
-        &-name {
-          span {
-          }
-        }
+      .header__box-left-label {
+        padding-bottom: 20px;
       }
       // О нас
       &-paragraph {
+        @include fonts("Lato", 300, 14px, 24px, #898989);
+        letter-spacing: 0.35px;
       }
     }
+
     // Колонка 1
-    &__company{}
+    &__company {
+      margin-left: -18px;
+    }
     // Колонка 2
-    &__information {}
-    // Колонка 3 
-    &__shop-category
-
-
-
-
-
+    &__information {
+      margin-left: -25px;
+    }
+    // Колонка 3
+    &__shop-category {
+      margin-left: -40px;
+    }
+    .footer__center-wrapper-title {
+      @include fonts("Lato", 800, 18px, 26px, #f16d7f);
+      letter-spacing: 0.45px;
+      padding-bottom: 28px;
+    }
+    .footer__center-wrapper-items {
+      a {
+        @include fonts("Lato", 400, 16px, 42px, #898989);
+        letter-spacing: 0.4px;
+      }
+    }
+  }
+  .footer__bottom-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 0;
+    .copyright_copy {
+      @include fonts("Lato", 400, 16px, 42px, #7a7a7a);
+      letter-spacing: 0.4px;
+    }
+    &_social {
+      display: grid;
+      grid-gap: 7px;
+      grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+      max-width: 50%;
+      a {
+        @include fonts("Font Awesome", 400, 16px, 42px, #f7f7f8);
+        letter-spacing: 0.4px;
+       
+        text-align: center;
+        .fab {
+        
+        }
+      }
+    }
   }
 }
-
-
-
-
-
-
-
-
-
-
 
 // @mixin fonts($ff, $fw, $fs, $lh, $c) {

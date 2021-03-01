@@ -426,4 +426,175 @@ hr {
   }
 }
 
+
+// Подвал
+
+
+
+
+.footer {
+  
+  // Верхняя часть подвала
+  &__top {
+    background: linear-gradient(rgba(244, 244, 244, 0.7)),
+    url(../background/footer__top-bg.png) no-repeat;
+    background-size: cover;
+    margin-bottom: 109px;
+    
+    
+    // Левая часть подвала
+    &-box {
+      display: flex;
+      justify-content: space-between;
+      padding: 111px 0 156px;
+    }
+    &-slide {
+      max-width: 570px;
+      width: 100%;
+      padding-left: 112px;
+      &-title {
+        max-width: 386px;
+        position: relative;
+        padding-bottom: 29px;
+        
+        &-photo {
+          position: absolute;
+          top: 0px;
+          left: -110px;
+          
+        }
+        &-paragraph {
+          @include fonts("Lato", 300, 16px, 26px, #222224);
+          letter-spacing: 0.4px;
+          font-style: italic;
+          padding-top: 6px;
+          padding-bottom: 10px;
+         
+        }
+        &-text {
+          @include fonts("Lato", 700, 16px, normal, #f16d7f);
+          span {
+            @include fonts("Lato-Light", 300, 12px, 14px, #222224);
+            letter-spacing: 0.3px;
+          }
+        }
+      }
+  
+      &-jump {
+        &-jump {
+          display: inline-block;
+          cursor: pointer;
+          width: 38px;
+          height: 4px;
+          background-color: #d6d6d6;
+          margin-left: 13px;
+        }
+        &-jump:first-child {
+          margin-left: 0;
+        }
+        .active-jump {
+          background-color: #f16d7f;
+        }
+      }
+    }
+    // Правая часть подвала
+    &-sub {
+      align-self: start;
+    //  max-width: 480px;
+    //  width: 100%;
+    padding: 19px 96px 0 0;
+     text-align: center;
+    .footer__top-sub-box {
+     
+
+    }
+      &-title {
+        padding-bottom: 29px;
+        
+        &-subtitle {
+          @include fonts("Lato", 400, 24px, 50px, #222224);
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            margin-bottom: -9px;
+        }
+        &-paragraph {
+          @include fonts("Lato", 400, 14px, 24px, #222224);
+          letter-spacing: 0.35px;
+          text-transform: uppercase;
+        }
+      }
+      
+      &-form {
+       
+        &-input {
+          padding: 9px 104px 9px 28px;
+          background: #e1e1e1;
+          border-top-left-radius: 25px;
+          border-bottom-left-radius: 25px;
+          @include fonts('Lato', 400, 14px, 24px, #222224);
+          letter-spacing: 0.35px;
+          opacity: 0.67;
+        }
+        &-button {
+          padding: 10px 20px;
+          background: #f16d7f;
+          border-top-right-radius: 25px;
+          border-bottom-right-radius: 25px;
+          margin-left: -3.8px;
+          &-text {
+          @include fonts('Lato', 400, 14px, 24px, #ffffff);  
+          letter-spacing: 0.35px;
+          }
+        
+        }
+        &-button:hover {
+          box-shadow: 4px 0px 20px rgba(156, 17, 8, 0.829);
+        }
+      }
+    }
+  }
+
+  // Центральная часть подвала
+
+  .&__center-wrapper {
+    display: grid;
+    
+    &__about-us {
+      // Бренд
+      &-label {
+        img {
+        }
+        &-name {
+          span {
+          }
+        }
+      }
+      // О нас
+      &-paragraph {
+      }
+    }
+    // Колонка 1
+    &__company{}
+    // Колонка 2
+    &__information {}
+    // Колонка 3 
+    &__shop-category
+
+
+
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 // @mixin fonts($ff, $fw, $fs, $lh, $c) {

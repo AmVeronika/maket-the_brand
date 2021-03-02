@@ -6,7 +6,7 @@
   color: $c;
 }
 
-.header__nav-bottom:hover .nav-bottom-wrapper-hover {
+.woman:hover .nav-bottom-wrapper-hover {
   display: block;
 }
 // Треугольник
@@ -17,7 +17,7 @@
     border: 8px solid transparent;
     border-bottom-color: #e8e8e8;
     top: -16px;
-    left: 60px;
+    left: 136px;
   }
   &::after {
     content: "";
@@ -25,7 +25,7 @@
     border: 8px solid transparent;
     border-bottom-color: white;
     top: -15px;
-    left: 60px;
+    left: 136px;
   }
 }
 // Треугольник конец
@@ -35,15 +35,16 @@
 .nav-bottom-wrapper-hover {
   display: none;
   position: absolute;
-  top: 56px;
-  right: 15px;
+  padding-top: 31px;
+  top: 0px;
+  left: -116px;
   z-index: 2;
 }
-.nav-bottom-items {
-  .woman {
-    position: relative;
-  }
+
+.woman {
+  position: relative;
 }
+
 .header__nav-bottom-wrapper {
   display: grid;
   column-gap: 46px;
@@ -52,11 +53,9 @@
     auto-fill,
     minmax(220px, 1fr) minmax(220px, 1fr) minmax(255px, 1fr)
   );
-  grid-template-rows: 180px 130px;
-  margin: 0 auto;
+  grid-template-rows: 168px;
   padding: 21px 21px 19px 25px;
   max-width: 850px;
-  width: 100%;
   background-color: white;
   border-radius: 5px;
   border: 1px solid #e8e8e8;
@@ -88,6 +87,7 @@
     letter-spacing: 0.35px;
     text-transform: uppercase;
     border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 10px;
   }
   &-items {
     a {

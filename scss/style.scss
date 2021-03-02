@@ -1,5 +1,5 @@
 @import "_nullstyle";
-
+@import "_hover-menu";
 // Шрифты
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
@@ -270,7 +270,7 @@ hr {
 // Общий блок с продуктом
 
 .wrapper-product {
-  margin-top: 100px;
+  margin-top: 84px;
   // Заголовок
   .wrapper-product__title {
     text-align: center;
@@ -549,7 +549,7 @@ hr {
     grid-template-columns: 2.2fr 0.8fr 0.8fr 0.8fr;
     grid-template-rows: 1fr;
     column-gap: 80px;
-    padding-bottom: 89px;
+    padding-bottom: 80px;
 
     &__about-us {
       // Бренд
@@ -587,31 +587,48 @@ hr {
       }
     }
   }
+
+  // Нижняя часть подвала
+
+  .footer__bottom {
+    background-color: #e6e6e6;
+  }
   .footer__bottom-copyright {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 23px 0;
+    
     .copyright_copy {
       @include fonts("Lato", 400, 16px, 42px, #7a7a7a);
       letter-spacing: 0.4px;
     }
+
+    // Иконски соцсетей
     &_social {
       display: grid;
       grid-gap: 7px;
-      grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(30px, 1fr)minmax(30px, 1fr)minmax(30px, 1fr)minmax(30px, 1fr)minmax(30px, 1fr));
+      grid-template-rows: 32px;
       max-width: 50%;
       a {
-        @include fonts("Font Awesome", 400, 16px, 42px, #f7f7f8);
+        @include fonts("Font Awesome", 400, 16px, 34px, #b2b2b2);
         letter-spacing: 0.4px;
-       
         text-align: center;
+        background-color: #ffffff;
         .fab {
         
         }
       }
+      a:hover {
+        color: #f7f7f8;
+        background-color: #f16d7f;
+    }
+    a:active {
+      color: #b2b2b2;
+      background-color: #ececec;  
     }
   }
 }
-
-// @mixin fonts($ff, $fw, $fs, $lh, $c) {
+}
+// @mixin fonts($ff, $fw, $fs, $lh, $c) 

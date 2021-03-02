@@ -79,6 +79,130 @@ h6 {
 }
 
 /*--------------------*/
+.header__nav-bottom:hover .nav-bottom-wrapper-hover {
+  display: block;
+}
+
+.header__nav-bottom-wrapper::before {
+  content: '';
+  position: absolute;
+  border: 8px solid transparent;
+  border-bottom-color: #e8e8e8;
+  top: -16px;
+  left: 60px;
+}
+
+.header__nav-bottom-wrapper::after {
+  content: '';
+  position: absolute;
+  border: 8px solid transparent;
+  border-bottom-color: white;
+  top: -15px;
+  left: 60px;
+}
+
+.nav-bottom-wrapper-hover {
+  display: none;
+  position: absolute;
+  top: 56px;
+  right: 15px;
+  z-index: 2;
+}
+
+.nav-bottom-items .woman {
+  position: relative;
+}
+
+.header__nav-bottom-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 46px;
+          column-gap: 46px;
+  row-gap: 0;
+  -ms-grid-columns: (minmax(220px, 1fr) minmax(220px, 1fr) minmax(255px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr) minmax(220px, 1fr) minmax(255px, 1fr));
+  -ms-grid-rows: 180px 130px;
+      grid-template-rows: 180px 130px;
+  margin: 0 auto;
+  padding: 21px 21px 19px 25px;
+  max-width: 850px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  position: relative;
+}
+
+.header__nav-bottom-wrapper-list1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+}
+
+.header__nav-bottom-wrapper-list2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.header__nav-bottom-wrapper-list3 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.header__nav-bottom-wrapper-list4 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  padding-left: 17px;
+}
+
+.header__nav-bottom-wrapper-promo {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+.header__nav-bottom-wrapper-list {
+  font-family: "Lato";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 32px;
+  color: #232323;
+  letter-spacing: 0.35px;
+  text-transform: uppercase;
+}
+
+.header__nav-bottom-wrapper-list p {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.header__nav-bottom-wrapper-items a {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #646464;
+  letter-spacing: 0.35px;
+  text-transform: none;
+}
+
 @font-face {
   font-family: "Lato-Black";
   src: url("https://nomail.com.ua/files/eot/9ff1710baadf935e7d7bc7c459fcabfe.eot?#iefix") format("embedded-opentype"), url("https://nomail.com.ua/files/woff/9ff1710baadf935e7d7bc7c459fcabfe.woff") format("woff"), url("https://nomail.com.ua/files/woff2/9ff1710baadf935e7d7bc7c459fcabfe.woff2") format("woff2");
@@ -419,7 +543,7 @@ hr {
 }
 
 .wrapper-product {
-  margin-top: 100px;
+  margin-top: 84px;
 }
 
 .wrapper-product .wrapper-product__title {
@@ -811,7 +935,7 @@ hr {
       grid-template-rows: 1fr;
   -webkit-column-gap: 80px;
           column-gap: 80px;
-  padding-bottom: 89px;
+  padding-bottom: 80px;
 }
 
 .footer__center-wrapper__about-us .header__box-left-label {
@@ -858,6 +982,10 @@ hr {
   letter-spacing: 0.4px;
 }
 
+.footer .footer__bottom {
+  background-color: #e6e6e6;
+}
+
 .footer .footer__bottom-copyright {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -884,8 +1012,10 @@ hr {
   display: -ms-grid;
   display: grid;
   grid-gap: 7px;
-  -ms-grid-columns: (minmax(30px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  -ms-grid-columns: (minmax(30px, 1fr) minmax(30px, 1fr) minmax(30px, 1fr) minmax(30px, 1fr) minmax(30px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30px, 1fr) minmax(30px, 1fr) minmax(30px, 1fr) minmax(30px, 1fr) minmax(30px, 1fr));
+  -ms-grid-rows: 32px;
+      grid-template-rows: 32px;
   max-width: 50%;
 }
 
@@ -893,8 +1023,19 @@ hr {
   font-family: "Font Awesome";
   font-weight: 400;
   font-size: 16px;
-  line-height: 42px;
-  color: #f7f7f8;
+  line-height: 34px;
+  color: #b2b2b2;
   letter-spacing: 0.4px;
   text-align: center;
+  background-color: #ffffff;
+}
+
+.footer .footer__bottom-copyright_social a:hover {
+  color: #f7f7f8;
+  background-color: #f16d7f;
+}
+
+.footer .footer__bottom-copyright_social a:active {
+  color: #b2b2b2;
+  background-color: #ececec;
 }

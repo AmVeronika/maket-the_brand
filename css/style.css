@@ -84,7 +84,7 @@ h6 {
 }
 
 .header__nav-bottom-wrapper::before {
-  content: '';
+  content: "";
   position: absolute;
   border: 8px solid transparent;
   border-bottom-color: #e8e8e8;
@@ -93,7 +93,7 @@ h6 {
 }
 
 .header__nav-bottom-wrapper::after {
-  content: '';
+  content: "";
   position: absolute;
   border: 8px solid transparent;
   border-bottom-color: white;
@@ -133,7 +133,7 @@ h6 {
   position: relative;
 }
 
-.header__nav-bottom-wrapper-list1 {
+.header__nav-bottom-wrapper-box1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -142,7 +142,7 @@ h6 {
   grid-row: 1/4;
 }
 
-.header__nav-bottom-wrapper-list2 {
+.header__nav-bottom-wrapper-box2 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -151,7 +151,7 @@ h6 {
   grid-row: 1/2;
 }
 
-.header__nav-bottom-wrapper-list3 {
+.header__nav-bottom-wrapper-box3 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -160,7 +160,7 @@ h6 {
   grid-row: 2/3;
 }
 
-.header__nav-bottom-wrapper-list4 {
+.header__nav-bottom-wrapper-box4 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
@@ -179,7 +179,7 @@ h6 {
   grid-row: 2/3;
 }
 
-.header__nav-bottom-wrapper-list {
+.header__nav-bottom-wrapper-title {
   font-family: "Lato";
   font-weight: 600;
   font-size: 14px;
@@ -187,9 +187,6 @@ h6 {
   color: #232323;
   letter-spacing: 0.35px;
   text-transform: uppercase;
-}
-
-.header__nav-bottom-wrapper-list p {
   border-bottom: 1px solid #e8e8e8;
 }
 

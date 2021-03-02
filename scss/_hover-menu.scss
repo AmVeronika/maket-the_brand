@@ -1,111 +1,99 @@
-
 @mixin fonts($ff, $fw, $fs, $lh, $c) {
-    font-family: $ff;
-    font-weight: $fw;
-    font-size: $fs;
-    line-height: $lh;
-    color: $c;
-  }
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $c;
+}
 
 .header__nav-bottom:hover .nav-bottom-wrapper-hover {
-    display: block; 
-    
+  display: block;
 }
 // Треугольник
 .header__nav-bottom-wrapper {
-    &::before {
-        content: ''; 
-        position: absolute;
-        border: 8px solid transparent; 
-        border-bottom-color: #e8e8e8;
-        top: -16px;
-        left: 60px;
-    }
-    &::after {
-        content: ''; 
-        position: absolute;
-        border: 8px solid transparent; 
-        border-bottom-color: white;
-        top: -15px;
-        left: 60px;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    border: 8px solid transparent;
+    border-bottom-color: #e8e8e8;
+    top: -16px;
+    left: 60px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    border: 8px solid transparent;
+    border-bottom-color: white;
+    top: -15px;
+    left: 60px;
+  }
 }
 // Треугольник конец
 
-
-
 .header__nav-bottom-list {
-    
 }
 .nav-bottom-wrapper-hover {
-    display: none;
-    position: absolute;
-    top: 56px;
-    right: 15px;
-    z-index: 2;
-    
+  display: none;
+  position: absolute;
+  top: 56px;
+  right: 15px;
+  z-index: 2;
 }
 .nav-bottom-items {
-    .woman {
+  .woman {
     position: relative;
-}
+  }
 }
 .header__nav-bottom-wrapper {
-    
-    display: grid;
-    column-gap: 46px;
-    row-gap: 0;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr) minmax(220px, 1fr) minmax(255px, 1fr));
-    grid-template-rows: 180px 130px;
-    margin: 0 auto;
-    padding: 21px 21px 19px 25px;
-    max-width: 850px;
-    width: 100%;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid #e8e8e8;
-    position: relative;
-    
-    
+  display: grid;
+  column-gap: 46px;
+  row-gap: 0;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(220px, 1fr) minmax(220px, 1fr) minmax(255px, 1fr)
+  );
+  grid-template-rows: 180px 130px;
+  margin: 0 auto;
+  padding: 21px 21px 19px 25px;
+  max-width: 850px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  position: relative;
 
-    &-list1 {
+  &-box1 {
     grid-column: 1/2;
     grid-row: 1/4;
-    }
-    &-list2 {
+  }
+  &-box2 {
     grid-column: 2/3;
     grid-row: 1/2;
-    }
-    &-list3 {
+  }
+  &-box3 {
     grid-column: 2/3;
     grid-row: 2/3;
-    }
-    &-list4 {
+  }
+  &-box4 {
     grid-column: 3/4;
     grid-row: 1/2;
     padding-left: 17px;
-    }
-    &-promo {
+  }
+  &-promo {
     grid-column: 3/4;
     grid-row: 2/3;
+  }
+  &-title {
+    @include fonts("Lato", 600, 14px, 32px, #232323);
+    letter-spacing: 0.35px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  &-items {
+    a {
+      @include fonts("Lato", 400, 14px, 28px, #646464);
+      letter-spacing: 0.35px;
+      text-transform: none;
     }
-    &-list {
-        @include fonts("Lato", 600, 14px, 32px, #232323);
-        letter-spacing: 0.35px;
-        text-transform: uppercase;
-        p {
-            border-bottom: 1px solid #e8e8e8;
-        }
-    }
-    &-items {
-        
-        a {
-            @include fonts("Lato", 400, 14px, 28px, #646464);
-            letter-spacing: 0.35px; 
-            text-transform: none;
-        }
-    }
-
-
-
+  }
 }

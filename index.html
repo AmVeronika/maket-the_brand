@@ -46,68 +46,69 @@
             <!-- Правый бокс с корзиной и личным кабинетом-->
             <div class="header__box-right">
               <div class="header__box-right-cart">
-                <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="29" viewBox="0 0 32 29">
+                <a class="header-cart-link" href="#"> <svg class="header-cart" xmlns="http://www.w3.org/2000/svg" width="32" height="29" viewBox="0 0 32 29">
                     <g>
                       <path fill="#222"
                         d="M0 1.182C0 .532.533 0 1.184 0h4.28c.533 0 1.007.354 1.145.867l4.833 17.455H24.62l4.379-10.048H14.4a1.186 1.186 0 0 1-1.184-1.182c0-.65.533-1.182 1.184-1.182h16.413c.394 0 .77.197.986.532.217.335.257.749.099 1.123l-5.405 12.412c-.198.433-.612.709-1.085.709H10.554a1.184 1.184 0 0 1-1.144-.867L4.577 2.364H1.184A1.186 1.186 0 0 1 0 1.182zM6.747 26.32a2.684 2.684 0 0 1 5.365 0 2.684 2.684 0 0 1-5.365 0zm16.788.178c-.1-1.458 1.006-2.758 2.485-2.857 1.48-.098 2.762 1.025 2.86 2.483.04.728-.177 1.418-.65 1.95a2.678 2.678 0 0 1-1.835.926h-.197c-1.401 0-2.565-1.103-2.663-2.502z">
                     </g>
                   </svg>
                 </a>
-                <!-- Всплывающее окно карзины:hover -->
+                                  <!-- Всплывающее окно карзины:hover -->
                  <div class="box-right-cart-hover">
-                   <div class="header__box-right-cart-wrapper">
-                     <!-- Товар-1 -->
-                     <div class="header__box-right-cart-wrapper-product header__box-right-cart-wrapper-product1">
-                      <a href="#">
-                      <img src="img/header__box-myaccount-product1.jpg" alt="product1">
-                      </a>
-                      <div class="header__cart-product1-info">
-                        <h4 class="header__cart-product1-info-title">Rebox Zane</h4>
-                        <div class="header__cart-product1-info-star">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <div class="header__cart-product1-info-amount">
-                          <p class="header__cart-product1-info-amount-clothes">1 <span class="header__cart-product1-info-amount-x" >x</span> <span class="header__cart-product1-info-amount-sum">$250</span></p>
-                        </div>
-                      </div>
-                      <i class="fas fa-times-circle"></i>
-                    </div>
-                    <!-- Товар-2 -->
-                     <div class="header__box-right-cart-wrapper-product header__box-right-cart-wrapper-product2">
-                       <a href="">
-                      <img src="img/header__box-myaccount-product2.jpg" alt="product2">
-                      </a>
-                      <div class="header__cart-product1-info">
-                        <h4 class="header__cart-product1-info-title">Rebox Zane</h4>
-                        <div class="header__cart-product1-info-star">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <div class="header__cart-product1-info-amount">
-                          <p class="header__cart-product1-info-amount-clothes">1 <span class="header__cart-product1-info-amount-x" >x</span> <span class="header__cart-product1-info-amount-sum">$250</span></p>
-                        </div>
-                      </div>
-                      <i class="fas fa-times-circle"></i>
-                    </div>
-                    <!-- Итоговая сумма -->
-                     <div class="header__box-right-cart-wrapper-price">
-                       <h3 class="header__cart-price-total">TOTAL</h3>
-                       <h3 class="header__cart-price-sum">$500.00</h3>
+                  <div class="header__box-right-cart-wrapper">
+                    <!-- Товар-1 -->
+                    <div class="header__box-right-cart-wrapper-product header__box-right-cart-wrapper-product1">
+                     <a class="cart-wrapper-product-link"  href="#">
+                     <img src="img/header__box-myaccount-product1.jpg" alt="product1">
+                     </a>
+                     <div class="header__cart-product1-info">
+                       <h4 class="header__cart-product1-info-title">Rebox Zane</h4>
+                       <div class="header__cart-product1-info-star">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                       </div>
+                       <div class="header__cart-product1-info-amount">
+                         <p class="header__cart-product1-info-amount-clothes">1 <span class="header__cart-product1-info-amount-x" >x</span> <span class="header__cart-product1-info-amount-sum">$250</span></p>
+                       </div>
                      </div>
-                     <!-- Проверка/Оплата -->
-                     <div class="header__box-right-cart-wrapper-payment">
-                       <p class="header__cart-payment-checkout"><a class="payment-checkout" href="#">Checkout</a></p>
-                       <p class="header__cart-payment-gotocart"><a class="payment-gotocart" href="#">Go to cart</a></p>
-                      </div>
+                     <i class="fas fa-times-circle"></i>
                    </div>
-                 </div>
+                   <!-- Товар-2 -->
+                    <div class="header__box-right-cart-wrapper-product header__box-right-cart-wrapper-product2">
+                      <a class="cart-wrapper-product-link" href="#">
+                     <img src="img/header__box-myaccount-product2.jpg" alt="product2">
+                     </a>
+                     <div class="header__cart-product1-info">
+                       <h4 class="header__cart-product1-info-title">Rebox Zane</h4>
+                       <div class="header__cart-product1-info-star">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star-half-alt"></i>
+                       </div>
+                       <div class="header__cart-product1-info-amount">
+                         <p class="header__cart-product1-info-amount-clothes">1 <span class="header__cart-product1-info-amount-x" >x</span> <span class="header__cart-product1-info-amount-sum">$250</span></p>
+                       </div>
+                     </div>
+                     <i class="fas fa-times-circle"></i>
+                   </div>
+                   <!-- Итоговая сумма -->
+                    <div class="header__box-right-cart-wrapper-price">
+                      <h3 class="header__cart-price-total">TOTAL</h3>
+                      <h3 class="header__cart-price-sum">$500.00</h3>
+                    </div>
+                    <!-- Проверка/Оплата -->
+                    <div class="header__box-right-cart-wrapper-payment">
+                      <p class="header__cart-payment-checkout"><a class="payment-checkout" href="#">Checkout</a></p>
+                      <p class="header__cart-payment-gotocart"><a class="payment-gotocart" href="#">Go to cart</a></p>
+                     </div>
+                  </div>
+                </div>
+                </a>
               </div>
               <!-- Личный кабинет -->
               <div class="header__box-right-user">
@@ -127,9 +128,9 @@
         <div class="container">
           <section class="nav-bottom">
           <ul class="header__nav-bottom-list">
-            <li class="nav-bottom-items"> <a href="#">HOME</a></li>
-            <li class="nav-bottom-items"><a href="#">MAN</a></li>
-            <li class="nav-bottom-items woman"><a class="woman-link" href="#">WOMAN</a>
+            <li class="nav-bottom-items"> <a class="nav-bottom-items-link" href="#">HOME</a></li>
+            <li class="nav-bottom-items"><a class="nav-bottom-items-link" href="#">MAN</a></li>
+            <li class="nav-bottom-items woman"><a class=" nav-bottom-items-link woman-link" href="#">WOMAN</a>
             <!-- Меню при наведении :hover-->
           <div class="nav-bottom-wrapper-hover">
             <div class="header__nav-bottom-wrapper">
@@ -183,10 +184,10 @@
             </div>
           </div>
           <!-- :hover закончился --></li>
-            <li class="nav-bottom-items"><a href="#">KIDS</a></li>
-            <li class="nav-bottom-items"><a href="#">ACCOSERIESE</a></li>
-            <li class="nav-bottom-items"><a href="#">FEATURED</a></li>
-            <li class="nav-bottom-items"><a href="#">HOT DEALS</a></li>
+            <li class="nav-bottom-items"><a class="nav-bottom-items-link" href="#">KIDS</a></li>
+            <li class="nav-bottom-items"><a class="nav-bottom-items-link" href="#">ACCOSERIESE</a></li>
+            <li class="nav-bottom-items"><a class="nav-bottom-items-link" href="#">FEATURED</a></li>
+            <li class="nav-bottom-items"><a class="nav-bottom-items-link" href="#">HOT DEALS</a></li>
           </ul>
           
         </section>

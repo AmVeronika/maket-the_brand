@@ -133,7 +133,7 @@
   justify-content: space-between;
   align-items: flex-end;
   &-user {
-    margin-left: 26px;
+    
     border: 1px solid #ff6a6a;
     &-name {
     @include fonts("Lato", 400, 15px, 38px, #ffffff);
@@ -182,10 +182,12 @@ hr {
     .nav-bottom-items {
       @include fonts("Lato", 700, 14px, 26px, #222222);
       text-transform: uppercase;
-      margin-left: 45px;
+      
 
-      a {
+      .nav-bottom-items-link {
         color: #222222;
+        padding: 0 20px 14px;
+        
       }
     }
     .nav-bottom-items:first-child {

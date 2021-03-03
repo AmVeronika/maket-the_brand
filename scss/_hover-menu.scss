@@ -10,9 +10,8 @@
   display: block;
 }
 
-.woman:hover .woman-link {
-  padding-bottom: 15px;
-}
+
+
 
 // Подчеркивание ссылок:hover
 .nav-bottom-items a:hover {
@@ -30,7 +29,7 @@
     border: 8px solid transparent;
     border-bottom-color: #e8e8e8;
     top: -16px;
-    left: 136px;
+    left: 155px;
   }
   &::after {
     content: "";
@@ -38,7 +37,7 @@
     border: 8px solid transparent;
     border-bottom-color: white;
     top: -15px;
-    left: 136px;
+    left: 155px;
   }
 }
 // Треугольник конец

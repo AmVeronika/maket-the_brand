@@ -83,10 +83,6 @@ h6 {
   display: block;
 }
 
-.woman:hover .woman-link {
-  padding-bottom: 15px;
-}
-
 .nav-bottom-items a:hover {
   border-bottom: 3px solid #f16d7f;
   -webkit-transition-duration: .1s;
@@ -99,7 +95,7 @@ h6 {
   border: 8px solid transparent;
   border-bottom-color: #e8e8e8;
   top: -16px;
-  left: 136px;
+  left: 155px;
 }
 
 .header__nav-bottom-wrapper::after {
@@ -108,7 +104,7 @@ h6 {
   border: 8px solid transparent;
   border-bottom-color: white;
   top: -15px;
-  left: 136px;
+  left: 155px;
 }
 
 .nav-bottom-wrapper-hover {
@@ -209,6 +205,10 @@ h6 {
   text-transform: none;
 }
 
+.header__box-right-cart:hover .header-cart path {
+  fill: #f16d7f;
+}
+
 .header__box-right-cart:hover .box-right-cart-hover {
   display: block;
 }
@@ -241,10 +241,14 @@ h6 {
   position: relative;
 }
 
+.header-cart-link {
+  padding: 26px;
+}
+
 .box-right-cart-hover {
   position: absolute;
   top: 44px;
-  left: -5px;
+  left: 20px;
   z-index: 3;
   border-radius: 5px;
   border: 1px solid #e8e8e8;
@@ -271,8 +275,8 @@ h6 {
   margin-bottom: 16px;
 }
 
-.box-right-cart-hover .header__box-right-cart-wrapper-product a {
-  padding-bottom: 16px;
+.box-right-cart-hover .header__box-right-cart-wrapper-product .cart-wrapper-product-link {
+  padding: 0 0 16px;
 }
 
 .box-right-cart-hover .header__box-right-cart-wrapper-product .header__cart-product1-info {
@@ -390,6 +394,7 @@ h6 {
   padding: 19px 72px;
   border: 1px solid #eaeaea;
   margin-bottom: 11px;
+  cursor: pointer;
 }
 
 .box-right-cart-hover .header__box-right-cart-wrapper .header__box-right-cart-wrapper-payment .header__cart-payment-checkout .payment-checkout {
@@ -404,6 +409,7 @@ h6 {
 .box-right-cart-hover .header__box-right-cart-wrapper .header__box-right-cart-wrapper-payment .header__cart-payment-gotocart {
   padding: 19px 72px;
   border: 1px solid #eaeaea;
+  cursor: pointer;
 }
 
 .box-right-cart-hover .header__box-right-cart-wrapper .header__box-right-cart-wrapper-payment .header__cart-payment-gotocart .payment-gotocart {
@@ -590,7 +596,6 @@ h6 {
 }
 
 .header__box-right-user {
-  margin-left: 26px;
   border: 1px solid #ff6a6a;
 }
 
@@ -648,11 +653,11 @@ hr {
   line-height: 26px;
   color: #222222;
   text-transform: uppercase;
-  margin-left: 45px;
 }
 
-.header__nav-bottom .header__nav-bottom-list .nav-bottom-items a {
+.header__nav-bottom .header__nav-bottom-list .nav-bottom-items .nav-bottom-items-link {
   color: #222222;
+  padding: 0 20px 14px;
 }
 
 .header__nav-bottom .header__nav-bottom-list .nav-bottom-items:first-child {

@@ -209,6 +209,10 @@ h6 {
   text-transform: none;
 }
 
+.header__box-right-cart:hover .box-right-cart-hover {
+  display: block;
+}
+
 .header__box-right-cart-wrapper::before {
   content: "";
   position: absolute;
@@ -230,6 +234,7 @@ h6 {
 .box-right-cart-hover {
   position: relative;
   background: white;
+  display: none;
 }
 
 .header__box-right-cart {
@@ -587,7 +592,6 @@ h6 {
 .header__box-right-user {
   margin-left: 26px;
   border: 1px solid #ff6a6a;
-  background-color: #f16d7f;
 }
 
 .header__box-right-user-name {
@@ -597,6 +601,7 @@ h6 {
   line-height: 38px;
   color: #ffffff;
   letter-spacing: 0.38px;
+  background-color: #f16d7f;
   padding: 0 12px 0 19px;
 }
 

@@ -135,10 +135,10 @@
   &-user {
     margin-left: 26px;
     border: 1px solid #ff6a6a;
-    background-color: #f16d7f;
     &-name {
     @include fonts("Lato", 400, 15px, 38px, #ffffff);
     letter-spacing: 0.38px;
+    background-color: #f16d7f;
     padding: 0 12px 0 19px;
     a {
       color: #ffffff;

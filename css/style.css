@@ -83,6 +83,10 @@ h6 {
   display: block;
 }
 
+.woman:hover .woman-link {
+  padding-bottom: 15px;
+}
+
 .nav-bottom-items a:hover {
   border-bottom: 3px solid #f16d7f;
   -webkit-transition-duration: .1s;
@@ -110,8 +114,7 @@ h6 {
 .nav-bottom-wrapper-hover {
   display: none;
   position: absolute;
-  padding-top: 10px;
-  top: 15px;
+  top: 35px;
   left: -116px;
   z-index: 2;
 }
@@ -290,7 +293,14 @@ h6 {
   text-transform: uppercase;
 }
 
-.box-right-cart-hover .header__box-right-cart-wrapper-product .header__cart-product1-info-star .fa-star, .box-right-cart-hover .header__box-right-cart-wrapper-product .header__cart-product1-info-star .fa-star-half-alt {
+.box-right-cart-hover .header__box-right-cart-wrapper-product .header__cart-product1-info-star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.box-right-cart-hover .header__box-right-cart-wrapper-product .header__cart-product1-info-star .fa-star,
+.box-right-cart-hover .header__box-right-cart-wrapper-product .header__cart-product1-info-star .fa-star-half-alt {
   font-size: 12px;
   color: #e4af48;
 }
@@ -332,13 +342,96 @@ h6 {
   letter-spacing: normal;
 }
 
-.box-right-cart-hover .header__box-right-cart-wrapper-product .circle {
+.box-right-cart-hover .header__box-right-cart-wrapper-product .fa-times-circle {
   color: #c0c0c0;
   font-size: 16px;
-  font-weight: 400;
-  margin-top: 30px;
-  padding-right: 2px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   cursor: pointer;
+}
+
+.box-right-cart-hover .header__box-right-cart-wrapper .header__box-right-cart-wrapper-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.box-right-cart-hover .header__box-right-cart-wrapper .header__box-right-cart-wrapper-price .header__cart-price-total {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: normal;
+  color: #222222;
+}
+
+.box-right-cart-hover .header__box-right-cart-wrapper .header__box-right-cart-wrapper-price .header__cart-price-sum {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: normal;
+  color: #222222;
+}
+
+.box-right-cart-hover .header__box-right-cart-wrapper .header__box-right-cart-wrapper-payment {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.box-right-cart-hover .header__box-right-cart-wrapper .header__box-right-cart-wrapper-payment .header__cart-payment-checkout {
+  padding: 19px 72px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 11px;
+}
+
+.box-right-cart-hover .header__box-right-cart-wrapper .header__box-right-cart-wrapper-payment .header__cart-payment-checkout .payment-checkout {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: normal;
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
+
+.box-right-cart-hover .header__box-right-cart-wrapper .header__box-right-cart-wrapper-payment .header__cart-payment-gotocart {
+  padding: 19px 72px;
+  border: 1px solid #eaeaea;
+}
+
+.box-right-cart-hover .header__box-right-cart-wrapper .header__box-right-cart-wrapper-payment .header__cart-payment-gotocart .payment-gotocart {
+  font-family: "Lato";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: normal;
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
+
+.box-right-cart-hover .header__box-right-cart-wrapper .header__cart-payment-checkout:hover {
+  border: 1px solid #ff6a6a;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+
+.box-right-cart-hover .header__box-right-cart-wrapper .header__cart-payment-checkout:hover .payment-checkout {
+  color: #f16d7f;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+
+.box-right-cart-hover .header__box-right-cart-wrapper .header__cart-payment-gotocart:hover {
+  border: 1px solid #ff6a6a;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+
+.box-right-cart-hover .header__box-right-cart-wrapper .header__cart-payment-gotocart:hover .payment-gotocart {
+  color: #f16d7f;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
 }
 
 @font-face {
@@ -494,6 +587,7 @@ h6 {
 .header__box-right-user {
   margin-left: 26px;
   border: 1px solid #ff6a6a;
+  background-color: #f16d7f;
 }
 
 .header__box-right-user-name {
@@ -503,7 +597,6 @@ h6 {
   line-height: 38px;
   color: #ffffff;
   letter-spacing: 0.38px;
-  background-color: #f16d7f;
   padding: 0 12px 0 19px;
 }
 

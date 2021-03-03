@@ -1,113 +1,161 @@
 @mixin fonts($ff, $fw, $fs, $lh, $c) {
-    font-family: $ff;
-    font-weight: $fw;
-    font-size: $fs;
-    line-height: $lh;
-    color: $c;
-  }
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $c;
+}
 
 //   Треугольник
 
 .header__box-right-cart-wrapper {
-    &::before {
-      content: "";
-      position: absolute;
-      border: 8px solid transparent;
-      border-bottom-color: #e8e8e8;
-      top: -16px;
-      left: 15px;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      border: 8px solid transparent;
-      border-bottom-color: white;
-      top: -14.9px;
-      left: 15px;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    border: 8px solid transparent;
+    border-bottom-color: #e8e8e8;
+    top: -16px;
+    left: 15px;
   }
-  .box-right-cart-hover {
-      position: relative;
-      background: white;
+  &::after {
+    content: "";
+    position: absolute;
+    border: 8px solid transparent;
+    border-bottom-color: white;
+    top: -14.9px;
+    left: 15px;
   }
+}
+.box-right-cart-hover {
+  position: relative;
+  background: white;
+}
 
 //   Треугольник конец
 
+.header__box-right-cart {
+  position: relative;
+}
+.box-right-cart-hover {
+  position: absolute;
+  top: 44px;
+  left: -5px;
+  z-index: 3;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  .header__box-right-cart-wrapper {
+    display: block;
+    padding: 20px 14px 20px 16px;
 
+    &-product2 {
+      margin-top: 16px;
+    }
 
-  .header__box-right-cart {
-      position: relative;
-  }
-  .box-right-cart-hover {
-    position: absolute;
-    top: 44px;
-    left: -5px;
-    z-index: 3;
-    border-radius: 5px;
-    border: 1px solid #e8e8e8;
-      .header__box-right-cart-wrapper {
-          display: block;
-          padding: 20px 14px 20px 16px;
-          
-          &-product2 {
-            margin-top: 16px;
-          }
-
-          &-product {
-            width: 230px;
-            display: flex;
-            justify-content: space-between;
-            border-bottom: 1px solid #e8e8e8;
-            margin-bottom: 16px;
-            a {
-              padding-bottom: 16px;
-            }
-            .header__cart-product1-info {
-              display: flex;
-              flex-direction: column;
-              justify-content: space-around;
-              padding-bottom: 21px;
-              &-title {
-                @include fonts("Lato", 700, 12px, normal, #222222);
-                letter-spacing: normal;
-                text-transform: uppercase;
-              }
-              &-star {
-                .fa-star, .fa-star-half-alt {
-                  font-size: 12px; 
-                  color: #e4af48; 
-                }              
-              }
-              &-amount {
-                display: flex;
-                &-clothes {
-                  @include fonts("Lato", 400, 10px, normal, #f16d7f);
-                  letter-spacing: normal;
-                  text-transform: uppercase;
-                }
-                &-x {
-                  @include fonts("Lato", 400, 10px, normal, #f16d7f);
-                  letter-spacing: normal;
-                  text-transform: uppercase;
-                  padding-left: 5px;
-                  padding-right: 5px;
-                }
-                &-sum {
-                  @include fonts("Lato", 400, 12px, normal, #f16d7f);
-                  letter-spacing: normal;
-                } 
-              }
-              
-            }
-            .circle {
-              color: #c0c0c0;
-              font-size: 16px;
-              font-weight: 400;
-              margin-top: 30px;
-              padding-right: 2px;
-              cursor: pointer;
-            }
-          }
-
+    &-product {
+      width: 230px;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #e8e8e8;
+      margin-bottom: 16px;
+      a {
+        padding-bottom: 16px;
       }
-  } 
+      .header__cart-product1-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-bottom: 21px;
+        &-title {
+          @include fonts("Lato", 700, 12px, normal, #222222);
+          letter-spacing: normal;
+          text-transform: uppercase;
+        }
+        &-star {
+          display: flex;
+          .fa-star,
+          .fa-star-half-alt {
+            font-size: 12px;
+            color: #e4af48;
+          }
+        }
+        &-amount {
+          display: flex;
+          &-clothes {
+            @include fonts("Lato", 400, 10px, normal, #f16d7f);
+            letter-spacing: normal;
+            text-transform: uppercase;
+          }
+          &-x {
+            @include fonts("Lato", 400, 10px, normal, #f16d7f);
+            letter-spacing: normal;
+            text-transform: uppercase;
+            padding-left: 5px;
+            padding-right: 5px;
+          }
+          &-sum {
+            @include fonts("Lato", 400, 12px, normal, #f16d7f);
+            letter-spacing: normal;
+          }
+        }
+      }
+      .fa-times-circle {
+        color: #c0c0c0;
+        font-size: 16px;
+        align-self: center;
+        cursor: pointer;
+      }
+    }
+
+    .header__box-right-cart-wrapper-price {
+      display: flex;
+      justify-content: space-between;
+      .header__cart-price-total {
+        @include fonts("Lato", 700, 16px, normal, #222222);
+      }
+      .header__cart-price-sum {
+        @include fonts("Lato", 700, 16px, normal, #222222);
+      }
+    }
+
+    // Оплата товара в карзине
+    .header__box-right-cart-wrapper-payment {
+      text-align: center;
+      margin-top: 32px;
+      .header__cart-payment-checkout {
+        padding: 19px 72px;
+        border: 1px solid #eaeaea;
+        margin-bottom: 11px;
+        .payment-checkout {
+          @include fonts("Lato", 700, 14px, normal, #4a4a4a);
+          text-transform: uppercase;
+        }
+      }
+      .header__cart-payment-gotocart {
+        padding: 19px 72px;
+        border: 1px solid #eaeaea;
+        .payment-gotocart {
+          @include fonts("Lato", 700, 14px, normal, #4a4a4a);
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    // Наведение на оплату:hover
+    .header__cart-payment-checkout:hover {
+      border: 1px solid #ff6a6a;
+      transition: 0.1s linear;
+      .payment-checkout {
+        color: #f16d7f;
+        transition: 0.1s linear;
+      }
+    }
+    .header__cart-payment-gotocart:hover {
+      border: 1px solid #ff6a6a;
+      transition: 0.1s linear;
+      .payment-gotocart {
+        color: #f16d7f;
+        transition: 0.1s linear;
+      }
+    }
+  }
+}

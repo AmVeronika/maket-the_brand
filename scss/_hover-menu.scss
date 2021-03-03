@@ -10,6 +10,10 @@
   display: block;
 }
 
+.woman:hover .woman-link {
+  padding-bottom: 15px;
+}
+
 // Подчеркивание ссылок:hover
 .nav-bottom-items a:hover {
   border-bottom: 3px solid #f16d7f;
@@ -44,8 +48,7 @@
 .nav-bottom-wrapper-hover {
   display: none;
   position: absolute;
-  padding-top: 10px;
-  top: 15px;
+  top: 35px;
   left: -116px;
   z-index: 2;
 }

@@ -1,5 +1,6 @@
 @import "_nullstyle";
 @import "_hover-menu";
+@import "_account-menu.scss";
 // Шрифты
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
@@ -131,8 +132,10 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  &-user-name {
+  &-user {
     margin-left: 26px;
+    border: 1px solid #ff6a6a;
+    &-name {
     @include fonts("Lato", 400, 15px, 38px, #ffffff);
     letter-spacing: 0.38px;
     background-color: #f16d7f;
@@ -142,6 +145,22 @@
     }
   }
 }
+}
+
+//  Наведение на мой аккаунт
+.header__box-right-user:hover {
+  
+  .header__box-right-user-name{
+      color: #f16d7f;
+      background-color: #ffffff;
+      transition: 0.2s linear;
+      .header__box-right-user-link {
+        color: #f16d7f;
+      }
+    }
+
+    }
+
 .fa-caret-down {
   padding-left: 8px;
 }
@@ -358,6 +377,8 @@ hr {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
   transition: 0.1s linear;
 }
+
+
 // Конец навенение
 
 // Кнопка под карточками
@@ -365,16 +386,29 @@ hr {
   margin-top: 58px;
   text-align: center;
 
+
   &-link {
     @include fonts("Lato", 700, 16px, 16px, #ffffff);
     letter-spacing: 0.4px;
     display: inline-block;
     padding: 16.5px 22px;
     background-color: #f16d7f;
+    border: 1px solid #ff6a6a;
     .fa-long-arrow-alt-right {
       padding-left: 9px;
     }
   }
+}
+
+// Наведение на кнопку:hover 
+
+
+  .wrapper-product__bottom-link:hover {
+      color: #f16d7f;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 20px rgba(156, 17, 8, 0.18);
+      transition: 0.2s linear;
+    
 }
 // Дополнительная информация
 
@@ -443,7 +477,7 @@ hr {
   // Верхняя часть подвала
   &__top {
     background: linear-gradient(rgba(244, 244, 244, 0.7)),
-      url(../background/footer__top-bg.png) no-repeat;
+      url(../background/footer__top-bg.png) bottom no-repeat;
     background-size: cover;
     margin-bottom: 109px;
 
@@ -547,7 +581,8 @@ hr {
           }
         }
         &-button:hover {
-          box-shadow: 4px 0px 20px rgba(156, 17, 8, 0.829);
+          box-shadow: 0px 0px 20px rgba(156, 17, 8, 0.500);
+          transition: 0.2s linear;
         }
       }
     }
@@ -595,10 +630,15 @@ hr {
       a {
         @include fonts("Lato", 400, 16px, 42px, #898989);
         letter-spacing: 0.4px;
+        
       }
     }
+    .footer__center-wrapper-items a:hover {
+      border-bottom: 3px solid #f16d7f;
+      transition: 0.1s linear;
+    }
   }
-
+ 
   // Нижняя часть подвала
 
   .footer__bottom {
@@ -637,10 +677,12 @@ hr {
       a:hover {
         color: #f7f7f8;
         background-color: #f16d7f;
+        transition: 0.3s linear;
       }
       a:active {
         color: #b2b2b2;
         background-color: #ececec;
+        transition: 0.3s linear;
       }
     }
   }

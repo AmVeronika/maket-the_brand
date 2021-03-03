@@ -9,6 +9,15 @@
 .woman:hover .nav-bottom-wrapper-hover {
   display: block;
 }
+
+// Подчеркивание ссылок:hover
+.nav-bottom-items a:hover {
+  border-bottom: 3px solid #f16d7f;
+  transition-duration: .1s;
+  
+}
+
+
 // Треугольник
 .header__nav-bottom-wrapper {
   &::before {
@@ -35,8 +44,8 @@
 .nav-bottom-wrapper-hover {
   display: none;
   position: absolute;
-  padding-top: 31px;
-  top: 0px;
+  padding-top: 10px;
+  top: 15px;
   left: -116px;
   z-index: 2;
 }
@@ -94,6 +103,7 @@
       @include fonts("Lato", 400, 14px, 28px, #646464);
       letter-spacing: 0.35px;
       text-transform: none;
+      
     }
   }
 }

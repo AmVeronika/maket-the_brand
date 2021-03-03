@@ -1,0 +1,113 @@
+@mixin fonts($ff, $fw, $fs, $lh, $c) {
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: $c;
+  }
+
+//   Треугольник
+
+.header__box-right-cart-wrapper {
+    &::before {
+      content: "";
+      position: absolute;
+      border: 8px solid transparent;
+      border-bottom-color: #e8e8e8;
+      top: -16px;
+      left: 15px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      border: 8px solid transparent;
+      border-bottom-color: white;
+      top: -14.9px;
+      left: 15px;
+    }
+  }
+  .box-right-cart-hover {
+      position: relative;
+      background: white;
+  }
+
+//   Треугольник конец
+
+
+
+  .header__box-right-cart {
+      position: relative;
+  }
+  .box-right-cart-hover {
+    position: absolute;
+    top: 44px;
+    left: -5px;
+    z-index: 3;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+      .header__box-right-cart-wrapper {
+          display: block;
+          padding: 20px 14px 20px 16px;
+          
+          &-product2 {
+            margin-top: 16px;
+          }
+
+          &-product {
+            width: 230px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #e8e8e8;
+            margin-bottom: 16px;
+            a {
+              padding-bottom: 16px;
+            }
+            .header__cart-product1-info {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              padding-bottom: 21px;
+              &-title {
+                @include fonts("Lato", 700, 12px, normal, #222222);
+                letter-spacing: normal;
+                text-transform: uppercase;
+              }
+              &-star {
+                .fa-star, .fa-star-half-alt {
+                  font-size: 12px; 
+                  color: #e4af48; 
+                }              
+              }
+              &-amount {
+                display: flex;
+                &-clothes {
+                  @include fonts("Lato", 400, 10px, normal, #f16d7f);
+                  letter-spacing: normal;
+                  text-transform: uppercase;
+                }
+                &-x {
+                  @include fonts("Lato", 400, 10px, normal, #f16d7f);
+                  letter-spacing: normal;
+                  text-transform: uppercase;
+                  padding-left: 5px;
+                  padding-right: 5px;
+                }
+                &-sum {
+                  @include fonts("Lato", 400, 12px, normal, #f16d7f);
+                  letter-spacing: normal;
+                } 
+              }
+              
+            }
+            .circle {
+              color: #c0c0c0;
+              font-size: 16px;
+              font-weight: 400;
+              margin-top: 30px;
+              padding-right: 2px;
+              cursor: pointer;
+            }
+          }
+
+      }
+  } 

@@ -14,15 +14,19 @@
 
 
 // Подчеркивание ссылок:hover
-.nav-bottom-items a:hover {
-  border-bottom: 3px solid #f16d7f;
+.nav-bottom-item:hover {
+  border-bottom: 2px solid #f16d7f;
   transition-duration: .1s;
-  
+}
+.header__nav-bottom-wrapper-item:hover a {
+  color: #f16d7f;
+  transition-duration: .1s;
 }
 
 
 // Треугольник
 .header__nav-bottom-wrapper {
+
   &::before {
     content: "";
     position: absolute;
@@ -42,8 +46,6 @@
 }
 // Треугольник конец
 
-.header__nav-bottom-list {
-}
 .nav-bottom-wrapper-hover {
   display: none;
   position: absolute;
@@ -100,7 +102,7 @@
     border-bottom: 1px solid #e8e8e8;
     margin-bottom: 10px;
   }
-  &-items {
+  &-item {
     a {
       @include fonts("Lato", 400, 14px, 28px, #646464);
       letter-spacing: 0.35px;

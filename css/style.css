@@ -283,13 +283,6 @@ h6 {
           justify-content: space-between;
 }
 
-.box-right-cart-hover .header__box-right-cart-wrapper-product .cart-wrapper-proheader__box-right-cart-wrapper-product:hover {
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
-  -webkit-box-shadow: 0 0 14px 0 rgba(133, 25, 17, 0.2);
-          box-shadow: 0 0 14px 0 rgba(133, 25, 17, 0.2);
-}
-
 .box-right-cart-hover .header__box-right-cart-wrapper-product .cart-wrapper-proheader__box-right-cart-wrapper-border {
   border-bottom: 1px solid #e8e8e8;
   padding-top: 16px;
@@ -376,6 +369,10 @@ h6 {
   cursor: pointer;
   padding-right: 5px;
   margin-right: -2px;
+}
+
+.box-right-cart-hover .header__box-right-cart-wrapper-product .fa-times-circle:hover {
+  font-weight: 400;
 }
 
 .box-right-cart-hover .header__box-right-cart-wrapper-price {
@@ -822,8 +819,8 @@ hr {
           transform: scale(1.01);
   -webkit-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.9);
           box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.9);
-  -webkit-transition-duration: .1s;
-          transition-duration: .1s;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
 }
 
 .wrapper-product {
@@ -1087,13 +1084,12 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 111px 0 156px;
 }
 
 .footer__top-slide {
   max-width: 570px;
   width: 100%;
-  padding-left: 112px;
+  padding: 111px 0 156px 112px;
 }
 
 .footer__top-slide-title {
@@ -1159,12 +1155,20 @@ hr {
   background-color: #f16d7f;
 }
 
+.footer__top-border {
+  height: 100%;
+  background-color: #f2f2f2;
+  width: 2px;
+}
+
 .footer__top-sub {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
-  padding: 19px 96px 0 0;
+  padding: 130px 96px 156px 0;
   text-align: center;
+  border-left: 1px solid #fff;
+  padding-left: 84px;
 }
 
 .footer__top-sub-title {
@@ -1212,7 +1216,7 @@ hr {
   background: #f16d7f;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  margin-left: -3.8px;
+  margin-left: -4.8px;
 }
 
 .footer__top-sub-form-button-text {

@@ -1,0 +1,12 @@
+@mixin fonts($ff, $fw, $fs, $lh, $c) {
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+    color: $c;
+
+
+    .browse-select:hover {
+        
+
+    }

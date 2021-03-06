@@ -188,9 +188,7 @@ hr {
         padding: 0 20px 14px;
       }
     }
-    .nav-bottom-items:first-child {
-      padding-left: 0;
-    }
+    
   }
 }
 
@@ -642,11 +640,14 @@ hr {
       a {
         @include fonts("Lato", 400, 16px, 42px, #898989);
         letter-spacing: 0.4px;
+        display: block;
       }
     }
     .footer__center-wrapper-items a:hover {
+      span {
       border-bottom: 3px solid #f16d7f;
       transition: 0.1s linear;
+      }
     }
   }
 

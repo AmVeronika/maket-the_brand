@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /*Обнуление*/
-@import url(c:\Users\Прак.19\Desktop\mikhotina-2\html-css\professional-layout\maket-the_brand\home\scss\_browse-select.css);
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 * {
   padding: 0;
@@ -210,6 +209,7 @@ h6 {
   color: #646464;
   letter-spacing: 0.35px;
   text-transform: none;
+  display: block;
 }
 
 .header__box-right-cart:hover .header-cart path {
@@ -461,6 +461,10 @@ h6 {
   transition: 0.1s linear;
 }
 
+.drop-menu-wrapper {
+  display: none;
+}
+
 @font-face {
   font-family: "Lato-Black";
   src: url("https://nomail.com.ua/files/eot/9ff1710baadf935e7d7bc7c459fcabfe.eot?#iefix") format("embedded-opentype"), url("https://nomail.com.ua/files/woff/9ff1710baadf935e7d7bc7c459fcabfe.woff") format("woff"), url("https://nomail.com.ua/files/woff2/9ff1710baadf935e7d7bc7c459fcabfe.woff2") format("woff2");
@@ -675,10 +679,6 @@ hr {
 .header__nav-bottom .header__nav-bottom-list .nav-bottom-items .nav-bottom-items-link {
   color: #222222;
   padding: 0 20px 14px;
-}
-
-.header__nav-bottom .header__nav-bottom-list .nav-bottom-items:first-child {
-  padding-left: 0;
 }
 
 .header__section {
@@ -1299,9 +1299,10 @@ hr {
   line-height: 42px;
   color: #898989;
   letter-spacing: 0.4px;
+  display: block;
 }
 
-.footer__center-wrapper .footer__center-wrapper-items a:hover {
+.footer__center-wrapper .footer__center-wrapper-items a:hover span {
   border-bottom: 3px solid #f16d7f;
   -webkit-transition: 0.1s linear;
   transition: 0.1s linear;

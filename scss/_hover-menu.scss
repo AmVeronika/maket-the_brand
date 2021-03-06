@@ -11,39 +11,57 @@
 }
 
 
-
-
-// Подчеркивание ссылок:hover
-.nav-bottom-item:hover {
-  border-bottom: 2px solid #f16d7f;
-  transition-duration: .1s;
+//Наведение на навигацию мега меню:hover
+.woman:hover  {
+  .nav-bottom-wrapper-hover {
+  display: block;
+  }
 }
+
+
+
+// Выделение цветом ссылок:hover
 .header__nav-bottom-wrapper-item:hover a {
   color: #f16d7f;
-  transition-duration: .1s;
+  transition-duration: 0.1s;
 }
-
 
 // Треугольник
-.header__nav-bottom-wrapper {
+// .header__nav-bottom-wrapper {
 
-  &::before {
-    content: "";
-    position: absolute;
-    border: 8px solid transparent;
-    border-bottom-color: #e8e8e8;
-    top: -16px;
-    left: 155px;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    border: 8px solid transparent;
-    border-bottom-color: white;
-    top: -15px;
-    left: 155px;
-  }
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     border: 8px solid transparent;
+//     border-bottom-color: #e8e8e8;
+//     top: -16px;
+//     left: 155px;
+//   }
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     border: 8px solid transparent;
+//     border-bottom-color: white;
+//     top: -15px;
+//     left: 155px;
+//   }
+// }
+
+.nav-bottom-wrapper-hover:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top: -6.5px;
+  left: 160px;
+  transform: rotate(45deg);
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+  z-index: 3;
 }
+
 // Треугольник конец
 
 .nav-bottom-wrapper-hover {
@@ -94,6 +112,7 @@
   &-promo {
     grid-column: 3/4;
     grid-row: 2/3;
+    cursor: pointer;
   }
   &-title {
     @include fonts("Lato", 600, 14px, 32px, #232323);
@@ -107,7 +126,7 @@
       @include fonts("Lato", 400, 14px, 28px, #646464);
       letter-spacing: 0.35px;
       text-transform: none;
-      display: block;      
+      display: block;
     }
   }
 }

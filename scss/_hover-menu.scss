@@ -6,13 +6,9 @@
   color: $c;
 }
 
-.woman:hover .nav-bottom-wrapper-hover {
-  display: block;
-}
-
 
 //Наведение на навигацию мега меню:hover
-.woman:hover  {
+.nav-bottom-item:hover  {
   .nav-bottom-wrapper-hover {
   display: block;
   }
@@ -72,9 +68,6 @@
   z-index: 2;
 }
 
-.woman {
-  position: relative;
-}
 
 .header__nav-bottom-wrapper {
   display: grid;

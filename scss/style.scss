@@ -202,6 +202,7 @@ hr {
     .nav-bottom-item {
       @include fonts("Lato", 700, 14px, 26px, #222222);
       text-transform: uppercase;
+      position: relative;
 
       .nav-bottom-item-link {
         color: #222222;

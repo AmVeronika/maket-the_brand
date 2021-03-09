@@ -79,11 +79,7 @@ h6 {
 }
 
 /*--------------------*/
-.woman:hover .nav-bottom-wrapper-hover {
-  display: block;
-}
-
-.woman:hover .nav-bottom-wrapper-hover {
+.nav-bottom-item:hover .nav-bottom-wrapper-hover {
   display: block;
 }
 
@@ -115,10 +111,6 @@ h6 {
   top: 35px;
   left: -116px;
   z-index: 2;
-}
-
-.woman {
-  position: relative;
 }
 
 .header__nav-bottom-wrapper {
@@ -1256,6 +1248,7 @@ hr {
   line-height: 26px;
   color: #222222;
   text-transform: uppercase;
+  position: relative;
 }
 
 .header__nav-bottom .header__nav-bottom-list .nav-bottom-item .nav-bottom-item-link {

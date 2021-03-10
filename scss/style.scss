@@ -222,22 +222,41 @@ hr {
 
 // Шапка заставка
 .header__section {
-  background: #e8e8e8;
+  background: linear-gradient(
+    0deg,
+    rgba(191, 191, 191, 1) 1%,
+    rgba(218, 218, 218, 1) 33%,
+    rgba(228, 228, 228, 1) 58%,
+    rgba(232, 232, 232, 1) 100%
+  );
   .header__name-title {
-    background: url(../background/nav__bottom-bac.png) left bottom no-repeat;
+    // background: url(../background/nav__bottom-bac.png) left bottom no-repeat;
+
     max-height: 612px;
     position: relative;
-    padding: 210px 0 297px 25px;
+    padding: 221px 0 297px 25px;
+    z-index: 2;
 
     .header__name-subtitle {
-      @include fonts("Lato-Black", 400, 60px, normal, #222222);
-      p {
+      position: absolute;
+      top: 221px;
+      left: 25px;
+      @include fonts("Lato-Black", 400, 60px, 48px, #222222);
+      letter-spacing: 1px;
+
+      .header__name-subtitle_span {
         @include fonts("Lato-Black", 400, 40px, normal, #222222);
         letter-spacing: 1px;
-        span {
-          color: #f16d7f;
-        }
       }
+      .header__name-subtitle_color {
+        @include fonts("Lato-Black", 400, 40px, normal, #f16d7f);
+        letter-spacing: 1px;
+      }
+    }
+    .header__name-title_video {
+      position: absolute;
+      top: 0;
+      left: 230px;
     }
   }
 }
@@ -245,7 +264,7 @@ hr {
   content: "";
   position: absolute;
   left: 0;
-  top: 223px;
+  top: 224px;
   display: block;
   width: 12px;
   height: 92px;

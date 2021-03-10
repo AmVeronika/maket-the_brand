@@ -83,6 +83,54 @@ h6 {
   display: block;
 }
 
+.nav-bottom-item-man:hover .nav-bottom-wrapper-hover {
+  left: -4px;
+}
+
+.nav-bottom-item-man:hover .nav-bottom-wrapper-hover:before {
+  left: 35px;
+}
+
+.nav-bottom-item-woman:hover .nav-bottom-wrapper-hover {
+  left: -77.5px;
+}
+
+.nav-bottom-item-woman:hover .nav-bottom-wrapper-hover:before {
+  left: 120px;
+}
+
+.nav-bottom-item-kids:hover .nav-bottom-wrapper-hover {
+  left: -177px;
+}
+
+.nav-bottom-item-kids:hover .nav-bottom-wrapper-hover:before {
+  left: 206px;
+}
+
+.nav-bottom-item-accoseriese:hover .nav-bottom-wrapper-hover {
+  left: -249px;
+}
+
+.nav-bottom-item-accoseriese:hover .nav-bottom-wrapper-hover:before {
+  left: 306px;
+}
+
+.nav-bottom-item-featured:hover .nav-bottom-wrapper-hover {
+  left: -381px;
+}
+
+.nav-bottom-item-featured:hover .nav-bottom-wrapper-hover:before {
+  left: 427px;
+}
+
+.nav-bottom-item-hotdeals:hover .nav-bottom-wrapper-hover {
+  left: -492.3px;
+}
+
+.nav-bottom-item-hotdeals:hover .nav-bottom-wrapper-hover:before {
+  left: 543px;
+}
+
 .header__nav-bottom-wrapper-item:hover a {
   color: #f16d7f;
   -webkit-transition-duration: 0.1s;

@@ -102,7 +102,7 @@ h6 {
           transform: rotate(45deg);
   border-left: 1px solid #e8e8e8;
   border-top: 1px solid #e8e8e8;
-  z-index: 3;
+  z-index: 5;
 }
 
 .nav-bottom-wrapper-hover {
@@ -110,7 +110,7 @@ h6 {
   position: absolute;
   top: 35px;
   left: -116px;
-  z-index: 2;
+  z-index: 4;
 }
 
 .header__nav-bottom-wrapper {
@@ -1263,25 +1263,30 @@ hr {
 }
 
 .header__section {
-  background: #e8e8e8;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(1%, #bfbfbf), color-stop(33%, #dadada), color-stop(58%, #e4e4e4), to(#e8e8e8));
+  background: linear-gradient(0deg, #bfbfbf 1%, #dadada 33%, #e4e4e4 58%, #e8e8e8 100%);
 }
 
 .header__section .header__name-title {
-  background: url(../background/nav__bottom-bac.png) left bottom no-repeat;
   max-height: 612px;
   position: relative;
-  padding: 210px 0 297px 25px;
+  padding: 221px 0 297px 25px;
+  z-index: 2;
 }
 
 .header__section .header__name-title .header__name-subtitle {
+  position: absolute;
+  top: 221px;
+  left: 25px;
   font-family: "Lato-Black";
   font-weight: 400;
   font-size: 60px;
-  line-height: normal;
+  line-height: 48px;
   color: #222222;
+  letter-spacing: 1px;
 }
 
-.header__section .header__name-title .header__name-subtitle p {
+.header__section .header__name-title .header__name-subtitle .header__name-subtitle_span {
   font-family: "Lato-Black";
   font-weight: 400;
   font-size: 40px;
@@ -1290,15 +1295,26 @@ hr {
   letter-spacing: 1px;
 }
 
-.header__section .header__name-title .header__name-subtitle p span {
+.header__section .header__name-title .header__name-subtitle .header__name-subtitle_color {
+  font-family: "Lato-Black";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: normal;
   color: #f16d7f;
+  letter-spacing: 1px;
+}
+
+.header__section .header__name-title .header__name-title_video {
+  position: absolute;
+  top: 0;
+  left: 230px;
 }
 
 .header__name-title::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 223px;
+  top: 224px;
   display: block;
   width: 12px;
   height: 92px;

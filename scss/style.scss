@@ -340,7 +340,7 @@ hr {
   .wrapper-product-card-box {
     display: grid;
     row-gap: 35px;
-    column-gap: 30px;
+    column-gap: 32px;
     grid-template-columns: repeat(auto-fill, 261px);
     // Карточка
     .wrapper-product-card {
@@ -349,7 +349,8 @@ hr {
       position: relative;
       .wrapper-product-card__link {
         display: grid;
-        grid-template-columns: 261px;
+        grid-template-columns: 262px;
+        grid-template-rows: 280px;
         text-decoration: none;
         .wrapper-product-card__link_img {
           width: 100%;
@@ -377,23 +378,30 @@ hr {
 .wrapper-product-card__hover {
   display: none;
   position: absolute;
-  border: 1px solid #fff;
-  align-items: center;
-  padding: 8px 10px;
+  border: 0.8px solid #fff;
+  padding: 5px 11px;
   color: #fff;
   font-family: "Lato", sans-serif;
   font-size: 13px;
   font-weight: 700;
-  top: 30%;
+  top: 33%;
   left: 50%;
   transform: translate(-50%, -50%);
+  align-items: center;
+  .wrapper-product-card__hover-block-icon {
+    
+  }
+  .wrapper-product-card__hover-block-paragraph {
+    padding-left: 8px;
+    padding-bottom: 3px;
+  }
 }
 
 // Конец наведения на карточку
 
 //  При наведении на карточку: hover
 .wrapper-product-card:hover .wrapper-product-card__hover {
-  display: block;
+  display: flex;
 }
 .wrapper-product-card:hover {
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);

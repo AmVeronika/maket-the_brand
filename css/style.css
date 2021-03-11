@@ -1490,79 +1490,63 @@ hr {
 }
 
 .wrapper-product .wrapper-product-card-box .wrapper-product-card {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 281px 1fr 1fr;
-      grid-template-rows: 281px 1fr 1fr;
-  cursor: pointer;
-}
-
-.wrapper-product .wrapper-product-card-box .wrapper-product-card__img {
-  max-width: 261px;
+  width: 261px;
+  height: 364px;
   position: relative;
 }
 
-.wrapper-product .wrapper-product-card-box .wrapper-product-card__img-picture {
+.wrapper-product .wrapper-product-card-box .wrapper-product-card .wrapper-product-card__link {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 261px;
+      grid-template-columns: 261px;
+  text-decoration: none;
+}
+
+.wrapper-product .wrapper-product-card-box .wrapper-product-card .wrapper-product-card__link .wrapper-product-card__link_img {
   width: 100%;
   height: 100%;
 }
 
-.wrapper-product .wrapper-product-card-box .wrapper-product-card__desc-paragraph {
-  margin: 16px 0 12px 14px;
+.wrapper-product .wrapper-product-card-box .wrapper-product-card .wrapper-product-card__link .wrapper-product__link-card_info {
+  padding: 14px 20px;
+}
+
+.wrapper-product .wrapper-product-card-box .wrapper-product-card .wrapper-product-card__link .wrapper-product__link-card_info .wrapper-product__link-card_info__desc-paragraph {
   font-family: "Lato";
-  font-weight: 600;
-  font-size: 13.5px;
+  font-weight: 700;
+  font-size: 13px;
   line-height: normal;
   color: #222222;
   text-transform: uppercase;
-  letter-spacing: 0.35px;
+  margin-bottom: 17px;
 }
 
-.wrapper-product .wrapper-product-card-box .wrapper-product-card__desc-prise {
+.wrapper-product .wrapper-product-card-box .wrapper-product-card .wrapper-product-card__link .wrapper-product__link-card_info .wrapper-product__link-card_info__desc-prise {
   font-family: "Lato";
   font-weight: 700;
   font-size: 16px;
   line-height: normal;
   color: #f16d7f;
-  letter-spacing: normal;
-  margin-left: 14px;
-  margin-bottom: 21px;
+  text-transform: uppercase;
 }
 
 .wrapper-product-card__hover {
   display: none;
   position: absolute;
-  top: 0;
-  left: 0;
-  padding: 98px 70px 144px;
-  background: rgba(58, 56, 56, 0.86);
-  max-width: 261px;
-  max-height: 280px;
-  cursor: pointer;
-}
-
-.wrapper-product-card__hover-block {
-  border: 1px solid #ffffff;
-  padding: 7px 11px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  border: 1px solid #fff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 123px;
-}
-
-.wrapper-product-card__hover-block-paragraph {
-  font-family: "Lato";
-  font-weight: 700;
+  padding: 8px 10px;
+  color: #fff;
+  font-family: "Lato", sans-serif;
   font-size: 13px;
-  line-height: normal;
-  color: #ffffff;
-  letter-spacing: normal;
+  font-weight: 700;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .wrapper-product-card:hover .wrapper-product-card__hover {
@@ -1572,20 +1556,33 @@ hr {
 .wrapper-product-card:hover {
   -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
           box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.wrapper-product-card:hover .wrapper-product-card__link_img {
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
   -webkit-transition: 0.1s linear;
   transition: 0.1s linear;
 }
 
-.wrapper-product-card__hover-block:hover {
+.wrapper-product-card__hover:hover {
   border: 1px solid #f16d7f;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
 }
 
-.wrapper-product-card__hover-block:hover .wrapper-product-card__hover-block-paragraph {
-  color: #f16d7f;
-}
-
-.wrapper-product-card__hover-block:hover .wrapper-product-card__hover-block-icon path {
+.wrapper-product-card__hover:hover .wrapper-product-card__hover-block-icon path {
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
   fill: #f16d7f;
+}
+
+.wrapper-product-card__hover:hover .wrapper-product-card__hover-block-paragraph {
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+  color: #f16d7f;
 }
 
 .wrapper-product__bottom {

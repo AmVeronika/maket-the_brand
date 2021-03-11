@@ -262,6 +262,7 @@ hr {
   display: grid;
   grid-template: 261px 261px 261px / 560px 560px;
   gap: 20px;
+  margin-bottom: 84px;
 
   &-card {
     cursor: pointer;
@@ -322,7 +323,6 @@ hr {
 // Общий блок с продуктом
 
 .wrapper-product {
-  margin-top: 84px;
   // Заголовок
   .wrapper-product__title {
     text-align: center;
@@ -330,6 +330,7 @@ hr {
     &-subtitle {
       @include fonts("Lato", 700, 30px, 54px, #222222);
       letter-spacing: 0.75px;
+      text-transform: uppercase;
     }
     &-paragraph {
       @include fonts("Lato", 400, 14px, normal, #9f9f9f);
@@ -345,7 +346,6 @@ hr {
     // Карточка
     .wrapper-product-card {
       width: 261px;
-      height: 364px;
       position: relative;
       .wrapper-product-card__link {
         display: grid;
@@ -358,15 +358,15 @@ hr {
         }
         .wrapper-product__link-card_info {
           padding: 14px 20px;
-          .wrapper-product__link-card_info__desc-paragraph {
-            @include fonts("Lato", 700, 13px, normal, #222222);
-            text-transform: uppercase;
-            margin-bottom: 17px;
-          }
-          .wrapper-product__link-card_info__desc-prise {
-            @include fonts("Lato", 700, 16px, normal, #f16d7f);
-            text-transform: uppercase;
-          }
+        }
+        .wrapper-product__link-card_info__desc-paragraph {
+          @include fonts("Lato", 700, 13px, normal, #222222);
+          text-transform: uppercase;
+          margin-bottom: 17px;
+        }
+        .wrapper-product__link-card_info__desc-prise {
+          @include fonts("Lato", 700, 16px, normal, #f16d7f);
+          text-transform: uppercase;
         }
       }
     }

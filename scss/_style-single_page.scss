@@ -40,6 +40,14 @@ $hover-ct: #ffafba;
   }
 }
 
+// Наведение на хлебные крошки
+@media (min-width: 768px) {
+  li:hover ._title_path--link {
+    color: #f16d7f;
+    font-weight: 600;
+  }
+}
+
 // main товар
 // Товар
 .product-page {
@@ -170,6 +178,12 @@ $hover-ct: #ffafba;
     }
   }
 }
+// Наведение на input :hover
+@media (min-width: 768px) {
+._toggle--choose_box-bg:hover {
+  border: 1px solid #ef5b7175;
+}
+}
 // Кнопка
 .product-page__descriptione_filter_button {
   display: flex;
@@ -198,8 +212,8 @@ $hover-ct: #ffafba;
 .header__cart-product-info-star {
   display: none;
   position: absolute;
-    bottom: 16px;
-    right: 10px;
+  bottom: 16px;
+  right: 10px;
   .fa-star,
   .fa-star-half-alt {
     font-size: 12px;
@@ -211,14 +225,13 @@ $hover-ct: #ffafba;
 }
 // Наведение на звезды:hover
 @media (min-width: 768px) {
- 
-.mightlike__product-card:hover .header__cart-product-info-star{
+  .mightlike__product-card:hover .header__cart-product-info-star {
     display: flex;
     position: absolute;
     bottom: 16px;
     right: 10px;
-    }
   }
+}
 
 // Конец предложения товаров (в общем файле стилей)
 

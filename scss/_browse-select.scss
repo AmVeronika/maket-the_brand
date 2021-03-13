@@ -27,7 +27,6 @@
   font-size: 14px;
   font-weight: 300;
   line-height: 34px;
-  padding: 0 7px 0 14px;
   letter-spacing: 0.35px;
   border-radius: 3px 0 0 3px;
 
@@ -127,7 +126,7 @@
     color: #838383;
     margin-right: 7px;
     top: 0;
-    left: 60px;
+    left: 66px;
     position: absolute;
     font-size: 7px;
     transform: scaleY(1.5);
@@ -182,6 +181,7 @@
     background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
     border-radius: 2px 0 0 2px;
     cursor: pointer;
+    padding: 0 7px 0 14px;
   }
 
   .drop-menu {

@@ -7,20 +7,15 @@
 }
 
 .header__box-right-cart:hover {
-  .header-cart { 
+  .header-cart {
     path {
       fill: #f16d7f;
     }
   }
   .box-right-cart-hover {
     display: block;
-    
   }
 }
-
-
-
-
 
 //   Треугольник
 
@@ -54,7 +49,7 @@
   position: relative;
 }
 
-.header-cart-link{
+.header-cart-link {
   padding: 26px;
 }
 .box-right-cart-hover {
@@ -83,12 +78,12 @@
       //   transform: scale(1.04);
       //   box-shadow: 0 0 14px 0 rgba(133, 25, 17, 0.20);
       // }
-      
+
       .cart-wrapper-proheader__box-right-cart-wrapper-border {
         border-bottom: 1px solid #e8e8e8;
         padding-top: 16px;
       }
-      
+
       .header__cart-product1-info {
         display: flex;
         flex-direction: column;
@@ -136,65 +131,62 @@
         margin-right: -2px;
       }
       .fa-times-circle:hover {
-        font-weight: 400;
+        color: $white;
       }
-      }
-      
+    }
   }
 
-    .header__box-right-cart-wrapper-price {
-      display: flex;
-      justify-content: space-between;
-      .header__cart-price-total {
-        @include fonts("Lato", 700, 16px, normal, #222222);
-      }
-      .header__cart-price-sum {
-        @include fonts("Lato", 700, 16px, normal, #222222);
-      }
+  .header__box-right-cart-wrapper-price {
+    display: flex;
+    justify-content: space-between;
+    .header__cart-price-total {
+      @include fonts("Lato", 700, 16px, normal, #222222);
     }
-
-    // Оплата товара в карзине
-    .header__box-right-cart-wrapper-payment {
-      text-align: center;
-      margin-top: 32px;
-      .header__cart-payment-checkout {
-        padding: 19px 72px;
-        border: 1px solid #eaeaea;
-        margin-bottom: 11px;
-        cursor: pointer;
-        .payment-checkout {
-          @include fonts("Lato", 700, 14px, normal, #4a4a4a);
-          text-transform: uppercase;
-        }
-      }
-      .header__cart-payment-gotocart {
-        padding: 19px 72px;
-        border: 1px solid #eaeaea;
-        cursor: pointer;
-        .payment-gotocart {
-          @include fonts("Lato", 700, 14px, normal, #4a4a4a);
-          text-transform: uppercase;
-        }
-      }
+    .header__cart-price-sum {
+      @include fonts("Lato", 700, 16px, normal, #222222);
     }
+  }
 
-    // Наведение на оплату:hover
-    .header__cart-payment-checkout:hover {
-      border: 1px solid #ff6a6a;
-      transition: 0.1s linear;
+  // Оплата товара в карзине
+  .header__box-right-cart-wrapper-payment {
+    text-align: center;
+    margin-top: 32px;
+    .header__cart-payment-checkout {
+      padding: 19px 72px;
+      border: 1px solid #eaeaea;
+      margin-bottom: 11px;
+      cursor: pointer;
       .payment-checkout {
-        color: #f16d7f;
-        transition: 0.1s linear;
+        @include fonts("Lato", 700, 14px, normal, #4a4a4a);
+        text-transform: uppercase;
       }
     }
-    .header__cart-payment-gotocart:hover {
-      border: 1px solid #ff6a6a;
-      transition: 0.1s linear;
+    .header__cart-payment-gotocart {
+      padding: 19px 72px;
+      border: 1px solid #eaeaea;
+      cursor: pointer;
       .payment-gotocart {
-        color: #f16d7f;
-        transition: 0.1s linear;
+        @include fonts("Lato", 700, 14px, normal, #4a4a4a);
+        text-transform: uppercase;
       }
     }
+  }
 
-    
+  // Наведение на оплату:hover
+  .header__cart-payment-checkout:hover {
+    border: 1px solid #ff6a6a;
+    transition: 0.1s linear;
+    .payment-checkout {
+      color: #f16d7f;
+      transition: 0.1s linear;
+    }
+  }
+  .header__cart-payment-gotocart:hover {
+    border: 1px solid #ff6a6a;
+    transition: 0.1s linear;
+    .payment-gotocart {
+      color: #f16d7f;
+      transition: 0.1s linear;
+    }
+  }
 }

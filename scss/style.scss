@@ -1,8 +1,24 @@
+$lato: "Lato", sans-serif;
+$open: "Open Sans", sans-serif;
+$latol: "Lato-Light";
+$latob: "Lato-Black";
+$pink: #f16d7f;
+$grey: #222222;
+$white: #fff;
+$hover: #ffafba;
+$light_grey: #6f6e6e;
+$ff: 15px;
+
 @import "_nullstyle";
 @import "_hover-menu";
 @import "_cart-menu.scss";
 @import "_browse-select.scss";
-@import "_style-single_page";
+@import "_style-single_page.scss";
+@import "_body-product.scss";
+
+
+
+
 
 // Шрифты
 
@@ -359,6 +375,7 @@ hr {
         .wrapper-product__link-card_info {
           padding: 14px 20px;
         }
+       
         .wrapper-product__link-card_info__desc-paragraph {
           @include fonts("Lato", 700, 13px, normal, #222222);
           text-transform: uppercase;

@@ -132,15 +132,15 @@
 
 
 
-      &-range {
-         &_rail {
+      &_filter-range {
+         &-slider {
             position: relative;
             width: 262px;
             height: 6px;
             border-radius: 3px;
             background-color: $pink;
             margin: 15px;
-            &-left {
+            ._filter-range-slider-left {
                position: absolute;
                left: 0;
                top: 0;
@@ -148,8 +148,9 @@
                height: 6px;
                border-radius: 3px;
                background-color: #f0f0f0;
+               transform: scale(1.01, 1.1);
             }
-            &-right {
+            ._filter-range-slider-right {
                position: absolute;
                top: 0;
                right: 0;
@@ -157,10 +158,10 @@
                height: 6px;
                border-radius: 3px;
                background-color: #f0f0f0;
+               transform: scale(1.01, 1.1);
             }
          }
-         &_button {
-            &-left {
+            ._filter-range-slider-button-left {
                position: absolute;
                top: 50%;
                transform: translateY(-50%);
@@ -170,7 +171,7 @@
                background-color: #f16d7f;
                border-radius: 50%;
             }
-            &-right {
+            ._filter-range-slider-button-right {
                position: absolute;
                top: 50%;
                transform: translateY(-50%);
@@ -180,8 +181,10 @@
                background-color: #f16d7f;
                border-radius: 50%;
             }
-         }
-         &_price {
+            ._filter-range-slider-button {
+               cursor: pointer;
+            }
+         &-price {
             display: flex;
             justify-content: space-between;
             color: $light_grey;
@@ -314,11 +317,11 @@
 
 @media (min-width: 768px) {
    .sidebar-drop-list-link:hover,
-   .product-content-filter-list_link:hover {
+   .product-content-form-categoty-link:hover {
       color: $pink;
       transition: 0.1s linear;
    }
-   .product-content-filter-size_checkbox input:hover,
+   .product-content-form-size-checkbox-input:hover,
    .product-content-sort_select:hover {
       box-shadow: 0 0 5px $pink;
       transition: 0.1s linear;

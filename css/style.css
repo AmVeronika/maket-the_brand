@@ -1201,7 +1201,7 @@ h6 {
   padding-left: 5px;
 }
 
-.product-content-form-range_rail {
+.product-content-form_filter-range-slider {
   position: relative;
   width: 262px;
   height: 6px;
@@ -1210,7 +1210,7 @@ h6 {
   margin: 15px;
 }
 
-.product-content-form-range_rail-left {
+.product-content-form_filter-range-slider ._filter-range-slider-left {
   position: absolute;
   left: 0;
   top: 0;
@@ -1218,9 +1218,11 @@ h6 {
   height: 6px;
   border-radius: 3px;
   background-color: #f0f0f0;
+  -webkit-transform: scale(1.01, 1.1);
+          transform: scale(1.01, 1.1);
 }
 
-.product-content-form-range_rail-right {
+.product-content-form_filter-range-slider ._filter-range-slider-right {
   position: absolute;
   top: 0;
   right: 0;
@@ -1228,9 +1230,11 @@ h6 {
   height: 6px;
   border-radius: 3px;
   background-color: #f0f0f0;
+  -webkit-transform: scale(1.01, 1.1);
+          transform: scale(1.01, 1.1);
 }
 
-.product-content-form-range_button-left {
+.product-content-form_filter-range ._filter-range-slider-button-left {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1242,7 +1246,7 @@ h6 {
   border-radius: 50%;
 }
 
-.product-content-form-range_button-right {
+.product-content-form_filter-range ._filter-range-slider-button-right {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1254,7 +1258,11 @@ h6 {
   border-radius: 50%;
 }
 
-.product-content-form-range_price {
+.product-content-form_filter-range ._filter-range-slider-button {
+  cursor: pointer;
+}
+
+.product-content-form_filter-range-price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1409,12 +1417,12 @@ h6 {
 
 @media (min-width: 768px) {
   .sidebar-drop-list-link:hover,
-  .product-content-filter-list_link:hover {
+  .product-content-form-categoty-link:hover {
     color: #f16d7f;
     -webkit-transition: 0.1s linear;
     transition: 0.1s linear;
   }
-  .product-content-filter-size_checkbox input:hover,
+  .product-content-form-size-checkbox-input:hover,
   .product-content-sort_select:hover {
     -webkit-box-shadow: 0 0 5px #f16d7f;
             box-shadow: 0 0 5px #f16d7f;

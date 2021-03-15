@@ -74,6 +74,9 @@
    }
 }
 
+
+
+
 // Main part
 
 .product-content {
@@ -130,7 +133,7 @@
          }
       }
 
-
+      // Диапазон цены 
 
       &_filter-range {
          &-slider {
@@ -194,6 +197,9 @@
             line-height: 26px;
          }
       }
+
+      // Конец диапазона цены 
+
    }
    // Sort
    &-sort {
@@ -312,6 +318,12 @@
       }
    }
 }
+
+
+
+
+
+
 
 // Media
 

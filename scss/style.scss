@@ -392,7 +392,7 @@ hr {
 
 // Стили для карточки при наведении
 @media (min-width: 768px) {
-  .wrapper-product-card__hover {
+  .wrapper-product-card__hover, .wrapper-product-card__hover-2, .wrapper-product-card__hover-3 {
     display: none;
     position: absolute;
     border: 0.8px solid #fff;
@@ -405,16 +405,33 @@ hr {
     left: 50%;
     transform: translate(-50%, -50%);
     align-items: center;
+    border-radius: 3px;
     .wrapper-product-card__hover-block-paragraph {
       padding-left: 8px;
       padding-bottom: 3px;
     }
   }
 
+  .wrapper-product-card__hover-2 {
+    top: 44%;
+    left: 37%;
+    padding: 8px 16px;
+  }
+  .wrapper-product-card__hover-3 {
+    top: 44%;
+    left: 63%;
+    padding: 5.5px 17px;
+  }
   // Конец наведения на карточку
 
   //  При наведении на карточку: hover
   .wrapper-product-card:hover .wrapper-product-card__hover {
+    display: flex;
+  }
+  .wrapper-product-card:hover .wrapper-product-card__hover-2 {
+    display: flex;
+  }
+  .wrapper-product-card:hover .wrapper-product-card__hover-3 {
     display: flex;
   }
   .wrapper-product-card:hover {
@@ -437,6 +454,22 @@ hr {
     .wrapper-product-card__hover-block-paragraph {
       transition: 0.1s linear;
       color: $pink;
+    }
+  }
+  .wrapper-product-card__hover-2:hover {
+    border: 1px solid $pink;
+    transition: 0.1s linear;
+    .wrapper-product-card__hover-block-icon path {
+      transition: 0.1s linear;
+      fill: $pink;
+    }
+  }
+  .wrapper-product-card__hover-3:hover {
+    border: 1px solid $pink;
+    transition: 0.1s linear;
+    .wrapper-product-card__hover-block-icon path {
+      transition: 0.1s linear;
+      fill: $pink;
     }
   }
 }

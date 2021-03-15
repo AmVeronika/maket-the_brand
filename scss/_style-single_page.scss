@@ -238,7 +238,7 @@
 
 // Стили для карточки, предложка
 
-.wrapper-product-card__hover {
+.wrapper-product-card__hover, .wrapper-product-card__hover-2, .wrapper-product-card__hover-3 {
   display: none;
   position: absolute;
   top: 0;
@@ -263,6 +263,7 @@
     }
   }
 }
+
 // Стили конец =D
 //  При наведении на карточку: hover
 .product-page__mightlike_wrapper_product-item:hover

@@ -238,12 +238,11 @@
 
 // Стили для карточки, предложка
 
-.wrapper-product-card__hover, .wrapper-product-card__hover-2, .wrapper-product-card__hover-3 {
+.wrapper-product-card__hover {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 98px 70px 144px;
   background: rgba(58, 56, 56, 0.86);
   max-width: 261px;
   max-height: 280px;
@@ -286,6 +285,7 @@
     color: #f16d7f;
   }
   .wrapper-product-card__hover-block-icon path {
+    stroke: $pink;
     fill: #f16d7f;
   }
 }

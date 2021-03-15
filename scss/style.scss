@@ -15,6 +15,8 @@ $ff: 15px;
 @import "_browse-select.scss";
 @import "_style-single_page.scss";
 @import "_body-product.scss";
+@import "_shoppingcart.scss";
+
 
 
 
@@ -392,11 +394,11 @@ hr {
 
 // Стили для карточки при наведении
 @media (min-width: 768px) {
-  .wrapper-product-card__hover, .wrapper-product-card__hover-2, .wrapper-product-card__hover-3 {
+  .wrapper-product-card__hover {
     display: none;
     position: absolute;
     border: 0.8px solid #fff;
-    padding: 5px 11px;
+    width: 120px;
     color: #fff;
     font-family: "Lato", sans-serif;
     font-size: 13px;
@@ -408,32 +410,31 @@ hr {
     border-radius: 3px;
     .wrapper-product-card__hover-block-paragraph {
       padding-left: 8px;
-      padding-bottom: 3px;
+      line-height: 42px;
     }
   }
 
   .wrapper-product-card__hover-2 {
-    top: 44%;
-    left: 37%;
-    padding: 8px 16px;
+    top: 46%;
+    left: 38%;
+    width: 57px;
+    height: 38px;
   }
   .wrapper-product-card__hover-3 {
-    top: 44%;
-    left: 63%;
-    padding: 5.5px 17px;
+    top: 46%;
+    left: 62%;
+    width: 57px;
+    height: 38px;
   }
   // Конец наведения на карточку
 
   //  При наведении на карточку: hover
   .wrapper-product-card:hover .wrapper-product-card__hover {
     display: flex;
+    justify-content: center;
+
   }
-  .wrapper-product-card:hover .wrapper-product-card__hover-2 {
-    display: flex;
-  }
-  .wrapper-product-card:hover .wrapper-product-card__hover-3 {
-    display: flex;
-  }
+
   .wrapper-product-card:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
     transition: all 0.1s linear;
@@ -450,29 +451,13 @@ hr {
     .wrapper-product-card__hover-block-icon path {
       transition: 0.1s linear;
       fill: $pink;
+      stroke: $pink;
     }
     .wrapper-product-card__hover-block-paragraph {
       transition: 0.1s linear;
       color: $pink;
     }
   }
-  .wrapper-product-card__hover-2:hover {
-    border: 1px solid $pink;
-    transition: 0.1s linear;
-    .wrapper-product-card__hover-block-icon path {
-      transition: 0.1s linear;
-      fill: $pink;
-    }
-  }
-  .wrapper-product-card__hover-3:hover {
-    border: 1px solid $pink;
-    transition: 0.1s linear;
-    .wrapper-product-card__hover-block-icon path {
-      transition: 0.1s linear;
-      fill: $pink;
-    }
-  }
-}
 // Конец навенение на карточку с продуктом
 
 // Кнопка под карточками
@@ -787,5 +772,5 @@ hr {
     }
   }
 }
-
+}
 // @mixin fonts($ff, $fw, $fs, $lh, $c)

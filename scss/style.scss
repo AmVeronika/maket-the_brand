@@ -25,6 +25,7 @@ $ff: 15px;
 // Шрифты
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 @font-face {
   font-family: "Lato-Black";
@@ -173,6 +174,7 @@ $ff: 15px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-right: -12px;
   &-user {
     border: 1px solid #ff6a6a;
     background-color: #f16d7f;
@@ -640,6 +642,7 @@ hr {
       }
 
       &-form {
+        display: flex;
         &-input {
           padding: 9px 104px 9px 28px;
           background: #e1e1e1;
@@ -651,11 +654,10 @@ hr {
           opacity: 0.67;
         }
         &-button {
-          padding: 10px 20px;
+          padding: 10px 20px 10px 16px;
           background: #f16d7f;
           border-top-right-radius: 25px;
           border-bottom-right-radius: 25px;
-          margin-left: -4.8px;
           &-text {
             @include fonts("Lato", 400, 14px, 24px, #ffffff);
             letter-spacing: 0.35px;

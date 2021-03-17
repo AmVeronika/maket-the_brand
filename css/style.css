@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Обнуление*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -1437,13 +1438,17 @@ h6 {
 .shopping__cart-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 5fr (1fr)[5];
-      grid-template-columns: 5fr repeat(5, 1fr);
-  -ms-grid-columns: 1fr (1fr)[5];
-      grid-template-columns: 1fr repeat(5, 1fr);
+  -ms-grid-columns: 4.7fr (1fr)[5];
+      grid-template-columns: 4.7fr repeat(5, 1fr);
   row-gap: 26px;
   -webkit-column-gap: 30px;
           column-gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .shopping__cart-grid0 .shopping__cart_product-details_h6 {
@@ -1456,10 +1461,59 @@ h6 {
   text-transform: uppercase;
 }
 
+.shopping__cart-grid ._cart-grid-position {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.shopping__cart-grid ._cart-grid-position:nth-child(6) {
+  -ms-grid-column-align: self-end;
+      justify-self: self-end;
+}
+
+.shopping__cart-grid .fa-times-circle-position {
+  color: #c0c0c0;
+  margin-right: 18px;
+  cursor: pointer;
+}
+
 .shopping__cart .shopping__cart_product_input {
   border: 1px solid #eaeaea;
   width: 54px;
   height: 30px;
+}
+
+.shopping__cart_product_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shopping__cart_product_block_name {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: normal;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.shopping__cart_product_block_options {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  color: #575757;
+  text-transform: uppercase;
+  text-align-last: left;
+}
+
+.shopping__cart_product_block_options_span {
+  font-family: "Lato-Light";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: normal;
+  color: #6f6e6e;
 }
 
 @font-face {
@@ -1630,6 +1684,7 @@ h6 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin-right: -12px;
 }
 
 .header__box-right-user {
@@ -2211,6 +2266,11 @@ hr {
     letter-spacing: 0.35px;
     text-transform: uppercase;
   }
+  .footer__top-sub-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .footer__top-sub-form-input {
     padding: 9px 104px 9px 28px;
     background: #e1e1e1;
@@ -2226,11 +2286,10 @@ hr {
     opacity: 0.67;
   }
   .footer__top-sub-form-button {
-    padding: 10px 20px;
+    padding: 10px 20px 10px 16px;
     background: #f16d7f;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    margin-left: -4.8px;
   }
   .footer__top-sub-form-button-text {
     font-family: "Lato";

@@ -1,5 +1,27 @@
 
-.shopping__cart_product-details {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+.shopping__cart {
+    margin-top: 85px;
+    &-grid {
+        display: grid;
+        grid-template-columns: 5fr repeat(5, 1fr);
+        grid-template-columns: 1fr repeat(5, 1fr);
+        row-gap: 26px;
+        column-gap: 30px;
+    }
+    
+    &-grid0 {
+        .shopping__cart_product-details_h6 {
+            @include fonts($latob, 700, 13px, 20px, $grey);
+            letter-spacing: -0.2px;
+            text-transform: uppercase;
+        }
+    }
+
+
+
+    .shopping__cart_product_input {
+        border: 1px solid #eaeaea;
+        width: 54px;
+        height: 30px;
+    }
 }

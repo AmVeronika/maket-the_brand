@@ -40,14 +40,30 @@
             margin-right: 18px;
             cursor: pointer;
         }
+        
+        .fa-times-circle-position:hover {
+            @media (min-width: 768px) {
+            color: #e94f64a8;
+            transition: 0.2s;
+            }
+        }
     }
+    // Поле ввода 
     .shopping__cart_product_input {
         border: 1px solid #eaeaea;
         width: 54px;
         height: 30px;
         padding-left: 10px;
     }
-    
+    //   hover поля ввода
+    .shopping__cart_product_input:hover {
+        @media (min-width: 768px) {
+            border: 1px solid #f16d7f80;
+            transition: 0.2s;
+        }
+    }
+     //  Конец hover поля ввода
+
     &_product {
         &_block {
             display: flex;
@@ -72,10 +88,43 @@
                 }
             }
         }
-        
-
+    }
+    // hover на карточки в корзине 
+    @media (min-width: 768px) {
+    .shopping__cart_product:hover {
+        box-shadow: -15px -12px 18px -6px #e996b334;
+        transition: 0.2s linear;
+    }
+    .shopping__cart_product:active {
+        box-shadow: -15px -12px 18px -6px #52374034;
+        transition: linear;
+    }
     }
 
+    // Звезды
+    .shopping__cart-grid-star {
+    display: none;
+    position: absolute;
+    bottom: 66px;
+    left: 123px;
+    .fa-stars,
+    .fa-stars-half-alt {
+      font-size: 12px;
+      color: #e4af48;
+    }
+  }
+  .shopping__cart_product_block {
+    position: relative;
+  }
+  // Наведение на звезды:hover
+  @media (min-width: 768px) {
+    .shopping__cart_product_block:hover .shopping__cart-grid-star {
+      display: flex;
+      position: absolute;
+    }
+  }
+
+//   Звёзды конец
     
 }
 .shopping__button {
@@ -88,6 +137,14 @@
         letter-spacing: -0.5px;
         padding: 15px 33px;
         border: 1px solid #eaeaea;
+    }
+    .shopping__button_font:hover {
+        @media (min-width: 768px) {
+            border: 1px solid #f16d7f;
+            color: $white;
+            background: #f16d7f;
+            transition: .15s linear;
+        }
     }
 }
 
@@ -108,22 +165,17 @@
         text-transform: uppercase;
         margin-bottom: 22px;
         }
-        .shopping__delivery_adress_box::placeholder {
-            @include fonts($lato, 300, 13px, 26px, #b1b1b1);
+        &-p {
+            @include fonts($lato, 300, 14px, normal, #000000);
         }
-        &_box {
-            display: flex;
-            width: 355px;
-            @include fonts($lato, 300, 13px, normal, #b1b1b1);
-            padding: 10px 0 18px 13px;
-            border: 1px solid #e0e0e0;
-        }
+        
         .select-country__yu6px {
             padding: 13px 0 13px 13px;
         }
         &_indent {
                 margin-top: 20px;
         }
+        
         .shopping__delivery_adress_indent:first-child {
             margin-top: 0;
         }
@@ -135,6 +187,15 @@
             text-transform: uppercase;
 
         }
+    }
+        // hover на кнопках в оформлении доставки
+        .shopping__delivery_adress_button:hover {
+            @media (min-width: 768px) {
+                border: 1px solid $pink;
+                color: $white;
+                background: $pink;
+                transition: .15s linear;
+            }
     }
     &_totalcost {
         text-align: right;
@@ -166,8 +227,34 @@
             display: inline-block;
             text-transform: uppercase;
             padding: 18px 36px;
-            background-color: #f16d7f;
-            border: 1px solid #ff6a6a;
+            background-color: $pink;
+            border: 1px solid $pink;
+        }
+        .shopping__delivery_totalcost-button:hover {
+            @media (min-width: 768px) {
+                border: 1px solid $pink;
+                color: $pink;
+                background: $white;
+                transition: .15s linear;
+            }
         }
     }
+    // Свойства input 
+    .shopping__delivery_adress_box {
+        display: flex;
+        width: 355px;
+        @include fonts($lato, 300, 13px, normal, #b1b1b1);
+        padding: 10px 0 18px 13px;
+        border: 1px solid #e0e0e0;
+    }
+    .shopping__delivery_adress_box::placeholder {
+        @include fonts($lato, 300, 13px, 26px, #b1b1b1);
+    }
+    // hover на input доставка
+    .shopping__delivery_adress_box:hover {
+        @media (min-width: 768px) {
+            border: 1px solid #f16d7f77;
+        }
+    }
+    // конец свойств input
 }

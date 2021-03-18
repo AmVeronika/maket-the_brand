@@ -273,11 +273,13 @@
 }
 
 .product-page__mightlike_wrapper_product-item:hover {
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
-  transition: 0.1s linear;
-  position: relative;
-  .header__cart-product1-info-star {
-    display: flex;
+  @media (min-width: 768px) {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    transition: 0.1s linear;
+    position: relative;
+    .header__cart-product1-info-star {
+      display: flex;
+    }
   }
 }
 

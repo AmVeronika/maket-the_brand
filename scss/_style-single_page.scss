@@ -24,6 +24,7 @@
         text-transform: uppercase;
         color: #636363;
         font-family: $latol;
+        letter-spacing: -1.47px;
       }
       ._title_path--link_active {
         font-family: $latob;
@@ -38,6 +39,7 @@
   li:hover ._title_path--link {
     color: #f16d7f;
     font-weight: 600;
+    
   }
 }
 

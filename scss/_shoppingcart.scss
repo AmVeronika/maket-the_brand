@@ -90,3 +90,61 @@
         border: 1px solid #eaeaea;
     }
 }
+
+
+
+.shopping__delivery {
+    margin-bottom: 79px;
+    display: flex;
+    justify-content: space-around;
+    &_adress {
+    // Выбор страны Выбор страны Выбор страны Выбор страны
+    // Выбор страны Выбор страны Выбор страны Выбор страны
+        &-h6 {
+        color: #222222;
+        font-family: $lato;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+        }
+        .shopping__delivery_adress_box::placeholder {
+            @include fonts($lato, 300, 13px, 26px, #b1b1b1);
+            text-transform: uppercase;
+        }
+        &_box {
+            display: flex;
+            width: 355px;
+            @include fonts($lato, 300, 13px, 26px, #b1b1b1);
+            text-transform: uppercase;
+            padding: 10px 0 14px 13px;
+            border: 1px solid #e0e0e0;
+        }
+        .select-country__yu6px {
+            padding: 17px 0 17px 13px;
+        }
+        &_indent {
+                margin-top: 20px;
+        }
+        .shopping__delivery_adress_indent:first-child {
+            margin-top: 0;
+        }
+        &_button {
+            display: inline-block;
+            border: 1px solid #e0e0e0;
+            padding: 12px 15px 12px 10px;
+            @include fonts($lato, 700, 11px, normal, #4a4a4a);
+            text-transform: uppercase;
+
+        }
+            //     .select-country__yu6px::before {
+            //         content: "\25BC";
+            //         color: #ef5b70;
+            //         top: 8px;
+            //         left: 230px;
+            //         position: absolute;
+            //         font-size: 7px;
+            //         transform: scaleX(1.5);
+            //}
+    }
+}

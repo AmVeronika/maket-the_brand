@@ -1568,6 +1568,99 @@ h6 {
   border: 1px solid #eaeaea;
 }
 
+.shopping__delivery {
+  margin-bottom: 79px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.shopping__delivery_adress-h6 {
+  color: #222222;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.shopping__delivery_adress .shopping__delivery_adress_box::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 26px;
+  color: #b1b1b1;
+  text-transform: uppercase;
+}
+
+.shopping__delivery_adress .shopping__delivery_adress_box:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 26px;
+  color: #b1b1b1;
+  text-transform: uppercase;
+}
+
+.shopping__delivery_adress .shopping__delivery_adress_box::-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 26px;
+  color: #b1b1b1;
+  text-transform: uppercase;
+}
+
+.shopping__delivery_adress .shopping__delivery_adress_box::placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 26px;
+  color: #b1b1b1;
+  text-transform: uppercase;
+}
+
+.shopping__delivery_adress_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 355px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 26px;
+  color: #b1b1b1;
+  text-transform: uppercase;
+  padding: 10px 0 14px 13px;
+  border: 1px solid #e0e0e0;
+}
+
+.shopping__delivery_adress .select-country__yu6px {
+  padding: 17px 0 17px 13px;
+}
+
+.shopping__delivery_adress_indent {
+  margin-top: 20px;
+}
+
+.shopping__delivery_adress .shopping__delivery_adress_indent:first-child {
+  margin-top: 0;
+}
+
+.shopping__delivery_adress_button {
+  display: inline-block;
+  border: 1px solid #e0e0e0;
+  padding: 12px 15px 12px 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: normal;
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
+
 @font-face {
   font-family: "Lato-Black";
   src: url("https://nomail.com.ua/files/eot/9ff1710baadf935e7d7bc7c459fcabfe.eot?#iefix") format("embedded-opentype"), url("https://nomail.com.ua/files/woff/9ff1710baadf935e7d7bc7c459fcabfe.woff") format("woff"), url("https://nomail.com.ua/files/woff2/9ff1710baadf935e7d7bc7c459fcabfe.woff2") format("woff2");

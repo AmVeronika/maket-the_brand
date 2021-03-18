@@ -81,12 +81,12 @@
 .shopping__button {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 45px;
     margin-bottom: 63px;
     &_font {
-        @include fonts($lato, 700, 14px, normal, #222222);
-        text-transform: uppercase;
-        padding: 20px 40px;
+        @include fonts($lato, 700, 14px, normal, #4a4a4a);
+        letter-spacing: -0.5px;
+        padding: 15px 33px;
         border: 1px solid #eaeaea;
     }
 }
@@ -96,7 +96,7 @@
 .shopping__delivery {
     margin-bottom: 79px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     &_adress {
     // Выбор страны Выбор страны Выбор страны Выбор страны
     // Выбор страны Выбор страны Выбор страны Выбор страны
@@ -110,18 +110,16 @@
         }
         .shopping__delivery_adress_box::placeholder {
             @include fonts($lato, 300, 13px, 26px, #b1b1b1);
-            text-transform: uppercase;
         }
         &_box {
             display: flex;
             width: 355px;
-            @include fonts($lato, 300, 13px, 26px, #b1b1b1);
-            text-transform: uppercase;
-            padding: 10px 0 14px 13px;
+            @include fonts($lato, 300, 13px, normal, #b1b1b1);
+            padding: 10px 0 18px 13px;
             border: 1px solid #e0e0e0;
         }
         .select-country__yu6px {
-            padding: 17px 0 17px 13px;
+            padding: 13px 0 13px 13px;
         }
         &_indent {
                 margin-top: 20px;
@@ -137,14 +135,39 @@
             text-transform: uppercase;
 
         }
-            //     .select-country__yu6px::before {
-            //         content: "\25BC";
-            //         color: #ef5b70;
-            //         top: 8px;
-            //         left: 230px;
-            //         position: absolute;
-            //         font-size: 7px;
-            //         transform: scaleX(1.5);
-            //}
+    }
+    &_totalcost {
+        text-align: right;
+        width: 355px;
+        background-color: #f5f3f3;
+        height: 235px; 
+        padding: 40px;
+        &-p {
+            display: inline-block;
+            @include fonts($lato, 600, 11px, normal, #4a4a4a);
+            text-transform: uppercase;
+        }
+        .shopping__delivery_totalcost-p:last-of-type {
+            padding-left: 22px;
+        } 
+        .shopping__delivery_adress-h6-collor {
+            color: #f16d7f;
+            padding-left: 22px;
+        }
+        .shopping__delivery_adress-h6-indent {
+            padding: 14px 0 22px;
+            border-bottom: 1px solid #e2e2e2;
+            margin-bottom: 17px;
+
+        }
+        &-button {
+
+            @include fonts($lato, 700, 16px, normal, $white);
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 18px 36px;
+            background-color: #f16d7f;
+            border: 1px solid #ff6a6a;
+        }
     }
 }

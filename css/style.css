@@ -1553,7 +1553,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 45px;
   margin-bottom: 63px;
 }
 
@@ -1562,9 +1562,9 @@ h6 {
   font-weight: 700;
   font-size: 14px;
   line-height: normal;
-  color: #222222;
-  text-transform: uppercase;
-  padding: 20px 40px;
+  color: #4a4a4a;
+  letter-spacing: -0.5px;
+  padding: 15px 33px;
   border: 1px solid #eaeaea;
 }
 
@@ -1573,8 +1573,9 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .shopping__delivery_adress-h6 {
@@ -1592,7 +1593,6 @@ h6 {
   font-size: 13px;
   line-height: 26px;
   color: #b1b1b1;
-  text-transform: uppercase;
 }
 
 .shopping__delivery_adress .shopping__delivery_adress_box:-ms-input-placeholder {
@@ -1601,7 +1601,6 @@ h6 {
   font-size: 13px;
   line-height: 26px;
   color: #b1b1b1;
-  text-transform: uppercase;
 }
 
 .shopping__delivery_adress .shopping__delivery_adress_box::-ms-input-placeholder {
@@ -1610,7 +1609,6 @@ h6 {
   font-size: 13px;
   line-height: 26px;
   color: #b1b1b1;
-  text-transform: uppercase;
 }
 
 .shopping__delivery_adress .shopping__delivery_adress_box::placeholder {
@@ -1619,7 +1617,6 @@ h6 {
   font-size: 13px;
   line-height: 26px;
   color: #b1b1b1;
-  text-transform: uppercase;
 }
 
 .shopping__delivery_adress_box {
@@ -1630,15 +1627,14 @@ h6 {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 13px;
-  line-height: 26px;
+  line-height: normal;
   color: #b1b1b1;
-  text-transform: uppercase;
-  padding: 10px 0 14px 13px;
+  padding: 10px 0 18px 13px;
   border: 1px solid #e0e0e0;
 }
 
 .shopping__delivery_adress .select-country__yu6px {
-  padding: 17px 0 17px 13px;
+  padding: 13px 0 13px 13px;
 }
 
 .shopping__delivery_adress_indent {
@@ -1659,6 +1655,52 @@ h6 {
   line-height: normal;
   color: #4a4a4a;
   text-transform: uppercase;
+}
+
+.shopping__delivery_totalcost {
+  text-align: right;
+  width: 355px;
+  background-color: #f5f3f3;
+  height: 235px;
+  padding: 40px;
+}
+
+.shopping__delivery_totalcost-p {
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: normal;
+  color: #4a4a4a;
+  text-transform: uppercase;
+}
+
+.shopping__delivery_totalcost .shopping__delivery_totalcost-p:last-of-type {
+  padding-left: 22px;
+}
+
+.shopping__delivery_totalcost .shopping__delivery_adress-h6-collor {
+  color: #f16d7f;
+  padding-left: 22px;
+}
+
+.shopping__delivery_totalcost .shopping__delivery_adress-h6-indent {
+  padding: 14px 0 22px;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 17px;
+}
+
+.shopping__delivery_totalcost-button {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: normal;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 18px 36px;
+  background-color: #f16d7f;
+  border: 1px solid #ff6a6a;
 }
 
 @font-face {

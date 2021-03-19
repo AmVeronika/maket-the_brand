@@ -1,0 +1,310 @@
+
+// Адрес товара, шапка
+
+.path-product {
+  background-color: #f8f3f4;
+  padding: 60px 0;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    &_title {
+      color: $pink;
+      font-family: $latob;
+      font-size: 24px;
+      line-height: 20px;
+      text-transform: uppercase;
+      line-height: normal;
+    }
+    ._title_path--list {
+      display: flex;
+      span {
+        padding: 0 3px;
+      }
+      ._title_path--link {
+        text-transform: uppercase;
+        color: #636363;
+        font-family: $latol;
+        letter-spacing: -1.47px;
+      }
+      ._title_path--link_active {
+        font-family: $latob;
+        color: $pink;
+      }
+    }
+  }
+}
+
+// Наведение на хлебные крошки
+@media (min-width: 768px) {
+  li:hover ._title_path--link {
+    color: #f16d7f;
+    font-weight: 600;
+    
+  }
+}
+
+// main товар
+// Товар
+.product-page {
+  margin-bottom: 73px;
+}
+.product-page__gallery {
+  border: 1px solid #eaeaea;
+  background-color: #f7f7f7;
+  padding-bottom: 51px;
+  //   Разбивка на страницы
+  &_pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //  Карусель товара
+    &_arrow {
+      cursor: pointer;
+      color: $white;
+      font-size: 24px;
+      background-color: #d8d8d8;
+      ._pagination_arrow-left {
+        padding: 16px 17px 16px 14px;
+      }
+      ._pagination_arrow-right {
+        padding: 16px 14px 16px 17px;
+      }
+    }
+  }
+}
+
+// Параметры/описание выбранного товара
+
+.product-page__descriptione {
+  .description_container {
+    border: 1px solid #eaeaea;
+    background-color: $white;
+    text-align: center;
+    max-width: 1140px;
+    position: relative;
+    top: -85px;
+  }
+  &_desk {
+    max-width: 645px;
+    margin: 0 auto;
+    border-bottom: 1px solid #eaeaea;
+    padding-top: 73px;
+    padding-bottom: 43px;
+    &_category {
+      @include fonts($lato, 700, 14px, 14px, $pink);
+      text-transform: uppercase;
+    }
+  }
+  &_pagination {
+    width: 147px;
+    border: 1px solid #eaeaea;
+    display: inline-block;
+    position: relative;
+    &_bullet_active {
+      display: inline-block;
+      width: 63px;
+      height: 4px;
+      background-color: #ef5b70;
+      position: absolute;
+      top: -2px;
+      left: 38px;
+    }
+  }
+  &_desk_product-name {
+    @include fonts($latob, 400, 18px, 24px, #4d4d4d);
+    text-transform: uppercase;
+    margin-top: 8px;
+    margin-bottom: 57px;
+  }
+  &_desk_description-text {
+    @include fonts($lato, 400, 14px, 24px, #5e5e5e);
+    margin-bottom: 15px;
+  }
+  &_desk_product-attributes {
+    max-width: 335px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    &_material,
+    &_designer {
+      @include fonts($lato, 700, 14px, 24px, #b9b9b9);
+      text-transform: uppercase;
+    }
+    &_material-collor,
+    &_designer-collor {
+      color: #2f2f2f;
+    }
+  }
+  &_desk_product_prise {
+    @include fonts($lato, 700, 24px, 24px, #ef5b70);
+    text-transform: uppercase;
+  }
+  //   Фильтр по параметрам
+  &_filter {
+    max-width: 645px;
+    margin: 0 auto;
+    padding-top: 56px;
+    padding-bottom: 122px;
+
+    &_toggle {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      ._toggle--choose-collor,
+      ._toggle--choose-size,
+      ._toggle--choose-quantity {
+        &_title {
+          @include fonts($lato, 700, 14px, 24px, #2f2f2f);
+          text-transform: uppercase;
+          padding-bottom: 10px;
+          text-align: left;
+        }
+      }
+      ._toggle--choose-collor_box,
+      ._toggle--choose-size_box,
+      ._toggle--choose-quantity_box {
+        width: 144px;
+        height: 35px;
+        border: 1px solid #eaeaea;
+        padding: 0 15px 0 15px;
+        @include fonts($lato, 400, 13px, 24px, #bcbcbc);
+      }
+    }
+  }
+}
+// Наведение на input :hover
+@media (min-width: 768px) {
+._toggle--choose_box-bg:hover {
+  border: 1px solid #ef5b7175;
+}
+}
+// Кнопка
+.product-page__descriptione_filter_button {
+  display: flex;
+  border: 1px solid #ef5b70;
+  background-color: #ffffff;
+  margin: 28px auto 0;
+  padding: 16px 205px 15px 205px;
+  ._button--text {
+    @include fonts($lato, 700, 16px, normal, #ef5b70);
+    padding-left: 15px;
+  }
+}
+
+// Предложения товаров (в общем файле стилей)
+// Стили для заголовка
+
+.mightlike__title {
+  padding-bottom: 10px;
+}
+.mightlike_subtitle {
+  @include fonts($latob, 400, 24px, 20px, #4d4d4d);
+  text-transform: uppercase;
+  margin-top: 35px;
+}
+// Звезды
+.header__cart-product-info-star {
+  display: none;
+  position: absolute;
+  bottom: 16px;
+  right: 10px;
+  .fa-star,
+  .fa-star-half-alt {
+    font-size: 12px;
+    color: #e4af48;
+  }
+  .wrapper-product__link-card_info__desc-prise {
+    position: relative;
+  }
+}
+// Наведение на звезды:hover
+@media (min-width: 768px) {
+  .mightlike__product-card:hover .header__cart-product-info-star {
+    display: flex;
+    position: absolute;
+    bottom: 16px;
+    right: 10px;
+  }
+}
+
+// Конец предложения товаров (в общем файле стилей)
+
+// Медиа свыше 768px
+@media (min-width: 768px) {
+  // Разбивка на страницы, подсветка стрелочек
+  .product-page__gallery_pagination_arrow:hover {
+    background-color: #9c9b9b;
+  }
+}
+
+// Стили для карточки, предложка
+
+.wrapper-product-card__hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(58, 56, 56, 0.86);
+  max-width: 261px;
+  max-height: 280px;
+  cursor: pointer;
+
+  &-block {
+    border: 1px solid #ffffff;
+    padding: 7px 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 123px;
+
+    &-paragraph {
+      @include fonts("Lato", 700, 13px, normal, #ffffff);
+      letter-spacing: normal;
+    }
+  }
+}
+
+// Стили конец =D
+//  При наведении на карточку: hover
+.product-page__mightlike_wrapper_product-item:hover
+  .wrapper-product-card__hover {
+  display: block;
+}
+
+.product-page__mightlike_wrapper_product-item:hover {
+  @media (min-width: 768px) {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+    transition: 0.1s linear;
+    position: relative;
+    .header__cart-product1-info-star {
+      display: flex;
+    }
+  }
+}
+
+.wrapper-product-card__hover-block:hover {
+  border: 1px solid #f16d7f;
+  .wrapper-product-card__hover-block-paragraph {
+    color: #f16d7f;
+  }
+  .wrapper-product-card__hover-block-icon path {
+    stroke: $pink;
+    fill: #f16d7f;
+  }
+}
+// Конец наведения на карточку
+
+// Нажатие кнопки в добавлении товара
+.product-page__descriptione_filter_button:hover {
+  border: 1px solid #ef5b70;
+  background-color: #ef5b70;
+  transition: 0.1s linear;
+  ._button--cart-img path {
+    fill: $white;
+  }
+  ._button--text {
+    @include fonts($lato, 700, 16px, normal, $white);
+    padding-left: 15px;
+  }
+}

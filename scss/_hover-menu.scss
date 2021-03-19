@@ -6,44 +6,108 @@
   color: $c;
 }
 
-.woman:hover .nav-bottom-wrapper-hover {
+
+//Наведение на навигацию мега меню:hover
+.nav-bottom-item:hover  {
+  .nav-bottom-wrapper-hover {
   display: block;
+  }
 }
 
 
 
+// Позиционирование мегаменю, относительно ссылок
+      .nav-bottom-item-man:hover .nav-bottom-wrapper-hover{
+        left: -4px;
+      }
+      .nav-bottom-item-man:hover .nav-bottom-wrapper-hover:before {
+          left:35px;
+        }
+      .nav-bottom-item-woman:hover .nav-bottom-wrapper-hover{
+        left: -77.5px;
+      }
+      .nav-bottom-item-woman:hover .nav-bottom-wrapper-hover:before {
+          left:120px;
+        }
+      .nav-bottom-item-kids:hover .nav-bottom-wrapper-hover{
+        left: -177px;
+      }
+      .nav-bottom-item-kids:hover .nav-bottom-wrapper-hover:before {
+          left:206px;
+        }
+      .nav-bottom-item-accoseriese:hover .nav-bottom-wrapper-hover{
+        left: -249px;
+      }
+      .nav-bottom-item-accoseriese:hover .nav-bottom-wrapper-hover:before {
+          left:306px;
+        }
+      .nav-bottom-item-featured:hover .nav-bottom-wrapper-hover{
+        left: -381px;
+      }
+      .nav-bottom-item-featured:hover .nav-bottom-wrapper-hover:before {
+          left:427px;
+        }
+      .nav-bottom-item-hotdeals:hover .nav-bottom-wrapper-hover{
+        left: -492.3px;
+      }
+      .nav-bottom-item-hotdeals:hover .nav-bottom-wrapper-hover:before {
+          left:543px;
+        }
 
-// Подчеркивание ссылок:hover
-.nav-bottom-items a:hover {
-  border-bottom: 3px solid #f16d7f;
-  transition-duration: .1s;
-  
+
+
+
+
+
+
+
+
+
+
+// Выделение цветом ссылок:hover
+.header__nav-bottom-wrapper-item:hover a {
+  color: #f16d7f;
+  transition-duration: 0.1s;
 }
-
 
 // Треугольник
-.header__nav-bottom-wrapper {
-  &::before {
-    content: "";
-    position: absolute;
-    border: 8px solid transparent;
-    border-bottom-color: #e8e8e8;
-    top: -16px;
-    left: 155px;
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    border: 8px solid transparent;
-    border-bottom-color: white;
-    top: -15px;
-    left: 155px;
-  }
+// .header__nav-bottom-wrapper {
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     border: 8px solid transparent;
+//     border-bottom-color: #e8e8e8;
+//     top: -16px;
+//     left: 155px;
+//   }
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     border: 8px solid transparent;
+//     border-bottom-color: white;
+//     top: -15px;
+//     left: 155px;
+//   }
+// }
+
+.nav-bottom-wrapper-hover:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top: -6.5px;
+  left: 160px;
+  transform: rotate(45deg);
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+  z-index: 3;
 }
+
 // Треугольник конец
 
-.header__nav-bottom-list {
-}
 .nav-bottom-wrapper-hover {
   display: none;
   position: absolute;
@@ -52,9 +116,6 @@
   z-index: 2;
 }
 
-.woman {
-  position: relative;
-}
 
 .header__nav-bottom-wrapper {
   display: grid;
@@ -64,7 +125,7 @@
     auto-fill,
     minmax(220px, 1fr) minmax(220px, 1fr) minmax(255px, 1fr)
   );
-  grid-template-rows: 168px;
+  grid-template-rows: 1fr;
   padding: 21px 21px 19px 25px;
   max-width: 850px;
   background-color: white;
@@ -92,6 +153,7 @@
   &-promo {
     grid-column: 3/4;
     grid-row: 2/3;
+    cursor: pointer;
   }
   &-title {
     @include fonts("Lato", 600, 14px, 32px, #232323);
@@ -100,12 +162,12 @@
     border-bottom: 1px solid #e8e8e8;
     margin-bottom: 10px;
   }
-  &-items {
+  &-item {
     a {
       @include fonts("Lato", 400, 14px, 28px, #646464);
       letter-spacing: 0.35px;
       text-transform: none;
-      
+      display: block;
     }
   }
 }
